@@ -9,7 +9,6 @@ import {
 } from "react-native";
 
 const Meny = () => {
-
   const Header = () => {
     return (
       <View style={styles.header}>
