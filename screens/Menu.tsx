@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import {
   Text,
   View,
@@ -8,7 +9,10 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-const Meny = () => {
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+const Menu = ({ navigation }) => {
   const Header = () => {
     return (
       <View style={styles.header}>
@@ -22,10 +26,13 @@ const Meny = () => {
       <View style={styles.boxContainer}>
         <View style={styles.box}>
           <View style={styles.inner}>
-            <TouchableOpacity style={styles.logoStyle}>
+            <TouchableOpacity
+              style={styles.logoStyle}
+              onPress={() => navigation.navigate("MotionMenu")}
+            >
               <Image
                 style={styles.imgStyle}
-                source={require("./assets/motion.png")}
+                source={require("../assets/motion.png")}
               />
               <Text style={styles.textStyle}>Rörelse</Text>
             </TouchableOpacity>
@@ -37,7 +44,7 @@ const Meny = () => {
             <TouchableOpacity style={styles.logoStyle}>
               <Image
                 style={styles.imgStyle}
-                source={require("./assets/looks.png")}
+                source={require("../assets/looks.png")}
               />
               <Text style={styles.textStyle}>Utseende</Text>
             </TouchableOpacity>
@@ -48,7 +55,7 @@ const Meny = () => {
             <TouchableOpacity style={styles.logoStyle}>
               <Image
                 style={styles.imgStyle}
-                source={require("./assets/sound.png")}
+                source={require("../assets/sound.png")}
               />
               <Text style={styles.textStyle}>Ljud</Text>
             </TouchableOpacity>
@@ -59,7 +66,7 @@ const Meny = () => {
             <TouchableOpacity style={styles.logoStyle}>
               <Image
                 style={styles.imgStyle}
-                source={require("./assets/events.png")}
+                source={require("../assets/events.png")}
               />
               <Text style={styles.textStyle}>Händelser</Text>
             </TouchableOpacity>
@@ -70,7 +77,7 @@ const Meny = () => {
             <TouchableOpacity style={styles.logoStyle}>
               <Image
                 style={styles.imgStyle}
-                source={require("./assets/controll.png")}
+                source={require("../assets/controll.png")}
               />
               <Text style={styles.textStyle}>Kontroll</Text>
             </TouchableOpacity>
@@ -82,7 +89,7 @@ const Meny = () => {
             <TouchableOpacity style={styles.logoStyle}>
               <Image
                 style={styles.imgStyle}
-                source={require("./assets/feel.png")}
+                source={require("../assets/feel.png")}
               />
               <Text style={styles.textStyle}>Känna av</Text>
             </TouchableOpacity>
@@ -94,7 +101,7 @@ const Meny = () => {
             <TouchableOpacity style={styles.logoStyle}>
               <Image
                 style={styles.imgStyle}
-                source={require("./assets/operations.png")}
+                source={require("../assets/operations.png")}
               />
               <Text style={styles.textStyle}>Operatorer</Text>
             </TouchableOpacity>
@@ -106,7 +113,7 @@ const Meny = () => {
             <TouchableOpacity style={styles.logoStyle}>
               <Image
                 style={styles.imgStyle}
-                source={require("./assets/variables.png")}
+                source={require("../assets/variables.png")}
               />
               <Text style={styles.textStyle}>Variabler</Text>
             </TouchableOpacity>
@@ -137,13 +144,13 @@ const styles = StyleSheet.create({
   },
   titleStyle: {
     color: "#F8A839",
-    fontFamily: "American Typewriter",
+    fontFamily: "American-Typewriter",
     fontSize: 80,
     padding: 30,
   },
   textStyle: {
     color: "#F8A839",
-    fontFamily: "American Typewriter",
+    fontFamily: "American-Typewriter",
     fontSize: 30,
     padding: 10,
   },
@@ -178,4 +185,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Meny;
+export default Menu;
