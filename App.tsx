@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Text,
-  View,
-  StyleSheet,
-  SafeAreaView,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 
 import { useFonts } from "expo-font";
 

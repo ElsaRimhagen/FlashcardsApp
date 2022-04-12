@@ -2,7 +2,6 @@ import {
   Animated,
   View,
   StyleSheet,
-  SafeAreaView,
   Easing,
   TouchableOpacity,
 } from "react-native";
@@ -30,7 +29,7 @@ const StartingScreen = () => {
   });
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View>
         <TouchableOpacity onPress={startImageRotationFunction}>
           <Animated.Image
@@ -39,7 +38,7 @@ const StartingScreen = () => {
           />
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 // onLoadStart={() => this.setState({loading: true})}?

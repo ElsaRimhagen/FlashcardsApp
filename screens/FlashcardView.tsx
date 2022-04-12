@@ -2,7 +2,6 @@ import {
   StyleSheet,
   Text,
   View,
-  SafeAreaView,
   TouchableOpacity,
   Animated,
   Image,
@@ -107,12 +106,12 @@ const FlashcardView = () => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Header />
       <FlashcardContainer />
       <BottomText />
       <GoingBack />
-    </SafeAreaView>
+    </View>
   );
 };
 

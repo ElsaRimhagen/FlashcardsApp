@@ -4,7 +4,6 @@ import {
   StyleSheet,
   Text,
   View,
-  SafeAreaView,
   ScrollView,
   Image,
   TouchableOpacity,
@@ -66,11 +65,11 @@ const MotionMenu = ({ navigation }) => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Header />
       <ScrollContainer />
       <GoingBack />
-    </SafeAreaView>
+    </View>
   );
 };
 
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
     color: "#F8A839",
     fontFamily: "American-Typewriter",
     fontSize: 80,
-    padding: 30,
+    // padding: 30,
   },
   boxContainer: {
     width: "80%",

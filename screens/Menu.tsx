@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 
-import {
-  Text,
-  View,
-  StyleSheet,
-  SafeAreaView,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -124,10 +117,10 @@ const Menu = ({ navigation }) => {
   };
 
   return (
-    <SafeAreaView style={styles.contatiner}>
+    <View style={styles.contatiner}>
       <Header />
       <Boxes />
-    </SafeAreaView>
+    </View>
   );
 };
 
@@ -146,13 +139,13 @@ const styles = StyleSheet.create({
     color: "#F8A839",
     fontFamily: "American-Typewriter",
     fontSize: 80,
-    padding: 30,
+    // padding: 30,
   },
   textStyle: {
     color: "#F8A839",
     fontFamily: "American-Typewriter",
     fontSize: 30,
-    padding: 10,
+    // padding: 10,
   },
   boxContainer: {
     width: "100%",
