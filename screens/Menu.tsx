@@ -31,10 +31,6 @@ const Menu = ( {navigation}: {navigation: any} ) => {
   const Boxes = () => {
     return (
       <View style={styles.boxContainer}>
-        <CategoryLogo 
-        source= {require("../assets/motion.png") }
-        category={'Rörelse'}  
-        navigation={"MotionMenu"} />
         <View style={styles.box}>
           <View style={styles.inner}>
             <TouchableOpacity
