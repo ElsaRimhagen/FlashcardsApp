@@ -5,12 +5,17 @@ import {
   Easing,
   TouchableOpacity,
 } from "react-native";
-import React, { useState } from "react";
 
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import React, { useState, useEffect } from "react";
 
-const StartingScreen = (navigation: any) => {
+import { StackParams } from "../App";
+
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { useNavigation } from "@react-navigation/core";
+
+const StartingScreen = () => {
+  const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
+
   let rotateValueHolder = new Animated.Value(0);
   rotateValueHolder.setValue(0);
   Animated.timing(rotateValueHolder, {
@@ -26,6 +31,10 @@ const StartingScreen = (navigation: any) => {
     outputRange: ["360deg", "0deg"],
   });
 
+  setTimeout(() => {
+    navigation.navigate("Menu");
+  }, 1500);
+
   return (
     <View style={styles.container}>
       <View>
@@ -37,7 +46,6 @@ const StartingScreen = (navigation: any) => {
     </View>
   );
 };
-// onLoadStart={() => this.setState({loading: true})}?
 
 const styles = StyleSheet.create({
   container: {

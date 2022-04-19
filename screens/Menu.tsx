@@ -1,9 +1,13 @@
 import React from "react";
 import { View } from "react-native";
-import Header from "../components/Header";
+
 import styles from "../styles";
-import { StackParams } from "../App";
+
+import Header from "../components/Header";
 import CategoryLogo from "../components/CategoryLogo";
+
+import { StackParams } from "../App";
+
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
 
