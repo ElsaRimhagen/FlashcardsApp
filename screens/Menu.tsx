@@ -5,18 +5,36 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+import Header from "../components/Header";
+
 const Menu = ( {navigation}: {navigation: any} ) => {
-  const Header = () => {
-    return (
-      <View style={styles.header}>
-        <Text style={styles.titleStyle}>Meny</Text>
-      </View>
-    );
-  };
+
+  const CategoryLogo = ( {props}: {props: any} ) => {
+    return(
+      <View style={styles.box}>
+          <View style={styles.inner}>
+            <TouchableOpacity
+              style={styles.logoStyle}
+              onPress={() => navigation.navigate(props.navigation)}
+            >
+              <Image
+                style={styles.imgStyle}
+                source={props.source}
+              />
+              <Text style={styles.textStyle}> {props.category} </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+
+    )};
 
   const Boxes = () => {
     return (
       <View style={styles.boxContainer}>
+        <CategoryLogo 
+        source= {require("../assets/motion.png") }
+        category={'Rörelse'}  
+        navigation={"MotionMenu"} />
         <View style={styles.box}>
           <View style={styles.inner}>
             <TouchableOpacity
@@ -118,7 +136,7 @@ const Menu = ( {navigation}: {navigation: any} ) => {
 
   return (
     <View style={styles.contatiner}>
-      <Header />
+      <Header title = "Meny" />
       <Boxes />
     </View>
   );
