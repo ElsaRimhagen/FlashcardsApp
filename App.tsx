@@ -8,13 +8,12 @@ import Menu from "./screens/Menu";
 import MotionMenu from "./screens/MotionMenu";
 import StartingScreen from "./screens/StartingScreen";
 
-export type StackParams= {
+export type StackParams = {
   Menu: any;
   StartingScreen: any;
   FlashcardView: any;
   MotionMenu: any;
 };
-
 
 const Stack = createNativeStackNavigator<StackParams>();
 
@@ -30,7 +29,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="StartingScreen"
+        initialRouteName="Menu"
         screenOptions={{
           headerShown: false,
           headerStyle: { backgroundColor: "blue" },
