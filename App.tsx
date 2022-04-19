@@ -1,18 +1,22 @@
 import React from "react";
-import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
-
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
-
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
 import FlashcardsView from "./screens/FlashcardView";
 import Menu from "./screens/Menu";
 import MotionMenu from "./screens/MotionMenu";
 import StartingScreen from "./screens/StartingScreen";
 
-const Stack = createNativeStackNavigator();
+export type StackParams= {
+  Menu: any;
+  StartingScreen: any;
+  FlashcardView: any;
+  MotionMenu: any;
+};
+
+
+const Stack = createNativeStackNavigator<StackParams>();
 
 const App = () => {
   let [fontsLoaded] = useFonts({

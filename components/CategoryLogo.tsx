@@ -4,22 +4,23 @@ import styles from "../styles";
 interface Props {
     source: any;
     category: string;
-    navigation?: string;
+    onPress?: () => void;
 }
 
-const CategoryLogo: React.FC<Props> = ( props , {navigation}: {navigation: any} ) => {
+const CategoryLogo: React.FC<Props> = ({source, category, onPress}) => {
     return(
       <View style={styles.box}>
           <View style={styles.inner}>
             <TouchableOpacity
               style={styles.logoStyle}
-              onPress={() => navigation.navigate(props.navigation)}
-            >
+              onPress={onPress} >
+              
               <Image
                 style={styles.imgStyle}
-                source={props.source}
+                source={source}
               />
-              <Text style={styles.textStyle}> {props.category} </Text>
+              
+              <Text style={styles.textStyle}> {category} </Text>
             </TouchableOpacity>
           </View>
         </View>
