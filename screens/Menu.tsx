@@ -2,10 +2,15 @@ import React from "react";
 import {View } from "react-native";
 import Header from "../components/Header";
 import styles from "../styles";
+import { StackParams } from "../App";
 import CategoryLogo from "../components/CategoryLogo";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { useNavigation } from "@react-navigation/core";
 
 
-const Menu = ( {navigation}: {navigation: any} ) => {
+
+const Menu = ( ) => {
+  const navigation = useNavigation<NativeStackNavigationProp <StackParams>>();
 
   const Boxes = () => {
     return (
@@ -13,7 +18,7 @@ const Menu = ( {navigation}: {navigation: any} ) => {
         < CategoryLogo 
             source = {require("../assets/motion.png")}
             category = "Rörelse"
-            navigation = "MotionMenu"
+            onPress= {() => {navigation.navigate("MotionMenu")}}
             />
         < CategoryLogo 
           source = {require("../assets/looks.png")}
