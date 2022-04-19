@@ -29,7 +29,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Menu"
+        initialRouteName="StartingScreen"
         screenOptions={{
           headerShown: false,
           headerStyle: { backgroundColor: "blue" },

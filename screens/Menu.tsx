@@ -1,52 +1,58 @@
 import React from "react";
-import {View } from "react-native";
-import Header from "../components/Header";
+import { View } from "react-native";
+
 import styles from "../styles";
-import { StackParams } from "../App";
+
+import Header from "../components/Header";
 import CategoryLogo from "../components/CategoryLogo";
+
+import { StackParams } from "../App";
+
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
 
-
-
+<<<<<<< HEAD
 const Menu = ( ) => {
   const navigation = useNavigation <NativeStackNavigationProp <StackParams>> ();
+=======
+const Menu = () => {
+  const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
+>>>>>>> 498b8b9537ff4a1392158761d47a25a686f91020
 
   const Boxes = () => {
     return (
       <View style={styles.boxContainer}>
-        < CategoryLogo 
-            source = {require("../assets/motion.png")}
-            category = "Rörelse"
-            onPress= {() => {navigation.navigate("MotionMenu")}}
-            />
-        < CategoryLogo 
-          source = {require("../assets/looks.png")}
-          category = "Utseende"
+        <CategoryLogo
+          source={require("../assets/motion.png")}
+          category="Rörelse"
+          onPress={() => {
+            navigation.navigate("MotionMenu");
+          }}
         />
-        < CategoryLogo 
-          source = {require("../assets/sound.png")}
-          category = "Ljud"
+        <CategoryLogo
+          source={require("../assets/looks.png")}
+          category="Utseende"
         />
-        < CategoryLogo 
-          source = {require("../assets/events.png")}
-          category = "Händelser"
+        <CategoryLogo source={require("../assets/sound.png")} category="Ljud" />
+        <CategoryLogo
+          source={require("../assets/events.png")}
+          category="Händelser"
         />
-        < CategoryLogo 
-          source = {require("../assets/controll.png")}
-          category = "Kontroll"
+        <CategoryLogo
+          source={require("../assets/controll.png")}
+          category="Kontroll"
         />
-        < CategoryLogo 
-          source = {require("../assets/feel.png")}
-          category = "Känna av"
+        <CategoryLogo
+          source={require("../assets/feel.png")}
+          category="Känna av"
         />
-        < CategoryLogo 
-          source = {require("../assets/operations.png")}
-          category = "Operatorer"
+        <CategoryLogo
+          source={require("../assets/operations.png")}
+          category="Operatorer"
         />
-        < CategoryLogo 
-          source = {require("../assets/variables.png")}
-          category = "Variabler"
+        <CategoryLogo
+          source={require("../assets/variables.png")}
+          category="Variabler"
         />
       </View>
     );
@@ -54,7 +60,7 @@ const Menu = ( ) => {
 
   return (
     <View style={styles.contatiner}>
-      <Header title = "Meny" />
+      <Header title="Meny" />
       <Boxes />
     </View>
   );
