@@ -10,18 +10,16 @@ import React, { useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-const StartingScreen = () => {
+const StartingScreen = (navigation: any) => {
   let rotateValueHolder = new Animated.Value(0);
-  const startImageRotationFunction = () => {
-    rotateValueHolder.setValue(0);
-    Animated.timing(rotateValueHolder, {
-      toValue: 1,
-      duration: 3000,
-      easing: Easing.quad,
-      useNativeDriver: false,
-      // }).start () --> om bara snurra en gång
-    }).start(() => startImageRotationFunction());
-  };
+  rotateValueHolder.setValue(0);
+  Animated.timing(rotateValueHolder, {
+    toValue: 1,
+    duration: 1500,
+    easing: Easing.quad,
+    useNativeDriver: false,
+    // }).start () --> om bara snurra en gång
+  }).start();
 
   const RotateData = rotateValueHolder.interpolate({
     inputRange: [0, 1],
@@ -31,12 +29,10 @@ const StartingScreen = () => {
   return (
     <View style={styles.container}>
       <View>
-        <TouchableOpacity onPress={startImageRotationFunction}>
-          <Animated.Image
-            source={require("../assets/scratch_cat.png")}
-            style={[styles.logo, { transform: [{ rotate: RotateData }] }]}
-          />
-        </TouchableOpacity>
+        <Animated.Image
+          source={require("../assets/scratch_cat.png")}
+          style={[styles.logo, { transform: [{ rotate: RotateData }] }]}
+        />
       </View>
     </View>
   );
