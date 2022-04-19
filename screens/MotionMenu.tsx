@@ -12,11 +12,7 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-const MotionMenu = ({ navigation }) => {
-  // const clickHandler = () => {
-  //   alert("Yay! Knappen funkar :)");
-  // };
-
+const MotionMenu = ({ navigation }: { navigation: any }) => {
   const Header = () => {
     return (
       <View style={styles.header}>
@@ -30,19 +26,19 @@ const MotionMenu = ({ navigation }) => {
         <ScrollView>
           <TouchableOpacity style={styles.clickStyle}>
             <Image
-              // source={require("../assets/move_10steps.png")}
+              source={require("../assets/move_10steps.png")}
               style={styles.imgStyle}
             />
           </TouchableOpacity>
           <TouchableOpacity style={styles.clickStyle}>
             <Image
-              // source={require("../assets/turn_right_15deg.png")}
+              source={require("../assets/turn_right_15deg.png")}
               style={styles.imgStyle}
             />
           </TouchableOpacity>
           <TouchableOpacity style={styles.clickStyle}>
             <Image
-              // source={require("../assets/turn_left_15deg.png")}
+              source={require("../assets/turn_left_15deg.png")}
               style={styles.imgStyle}
             />
           </TouchableOpacity>
