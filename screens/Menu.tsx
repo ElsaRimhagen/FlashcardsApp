@@ -5,7 +5,7 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-const Menu = ({ navigation }) => {
+const Menu = ( {navigation}: {navigation: any} ) => {
   const Header = () => {
     return (
       <View style={styles.header}>
