@@ -8,7 +8,7 @@ interface Props{
 const Header: React.FC<Props> = ({title}) => {
     return (
       <View style={styles.headerStyle}>
-        <Text style={styles.titleStyle}>{title}</Text>
+        <Text style={styles.titleStyle}> {title} </Text>
       </View>
     );
   };

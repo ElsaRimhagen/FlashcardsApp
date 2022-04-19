@@ -10,7 +10,7 @@ import { useNavigation } from "@react-navigation/core";
 
 
 const Menu = ( ) => {
-  const navigation = useNavigation<NativeStackNavigationProp <StackParams>>();
+  const navigation = useNavigation <NativeStackNavigationProp <StackParams>> ();
 
   const Boxes = () => {
     return (

@@ -14,12 +14,9 @@ const CategoryLogo: React.FC<Props> = ({source, category, onPress}) => {
             <TouchableOpacity
               style={styles.logoStyle}
               onPress={onPress} >
-              
               <Image
                 style={styles.imgStyle}
-                source={source}
-              />
-              
+                source={source} />
               <Text style={styles.textStyle}> {category} </Text>
             </TouchableOpacity>
           </View>
