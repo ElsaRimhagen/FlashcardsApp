@@ -11,8 +11,8 @@ import { StackParams } from "../App";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
 
-const Menu = ( ) => {
-  const navigation = useNavigation <NativeStackNavigationProp <StackParams>> ();
+const Menu = () => {
+  const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
   const Boxes = () => {
     return (
