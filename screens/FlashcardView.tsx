@@ -90,6 +90,7 @@ const FlashcardView = () => {
       </View>
     );
   };
+
   const clickHandler = () => {
     alert("Floating button clicked!");
   };
