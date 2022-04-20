@@ -32,7 +32,7 @@ const StartingScreen = () => {
   });
 
   setTimeout(() => {
-    navigation.navigate("Menu");
+    navigation.replace("Menu");
   }, 1500);
 
   return (
