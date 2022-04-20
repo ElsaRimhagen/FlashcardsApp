@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     padding: 5,
     backgroundColor: "#4C97FF",
   },
-  inner: {
+  innerbox: {
     flex: 1,
     backgroundColor: "#4C97FF",
     alignItems: "center",

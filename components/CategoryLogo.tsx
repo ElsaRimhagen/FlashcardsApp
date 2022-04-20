@@ -10,7 +10,7 @@ interface Props {
 const CategoryLogo: React.FC<Props> = ({source, category, onPress}) => {
     return(
       <View style={styles.box}>
-          <View style={styles.inner}>
+          <View style={styles.innerbox}>
             <TouchableOpacity
               style={styles.logoStyle}
               onPress={onPress} >
