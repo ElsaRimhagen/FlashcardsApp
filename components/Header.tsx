@@ -5,7 +5,7 @@ interface Props {
   title: string;
 }
 
-const Header: React.FC<Props> = ({title}) => {
+const Header: React.FC<Props> = ({ title }) => {
     return (
       <View style={styles.headerStyle}>
         <Text style={styles.titleStyle}> {title} </Text>

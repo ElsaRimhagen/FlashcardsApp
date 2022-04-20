@@ -34,8 +34,7 @@ const App = () => {
           headerShown: false,
           headerStyle: { backgroundColor: "blue" },
           title: "",
-        }}
-      >
+        }} >
         <Stack.Screen name="StartingScreen" component={StartingScreen} />
         <Stack.Screen name="FlashcardView" component={FlashcardsView} />
         <Stack.Screen name="Menu" component={Menu} />

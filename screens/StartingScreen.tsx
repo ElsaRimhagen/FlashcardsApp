@@ -1,17 +1,9 @@
-import {
-  Animated,
-  View,
-  StyleSheet,
-  Easing,
-  TouchableOpacity,
-} from "react-native";
-
-import React, { useState, useEffect } from "react";
-
+import { Animated, View, Easing } from "react-native";
+import React from "react";
 import { StackParams } from "../App";
-
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
+import styles from "../styles";
 
 const StartingScreen = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
@@ -23,7 +15,6 @@ const StartingScreen = () => {
     duration: 1500,
     easing: Easing.quad,
     useNativeDriver: false,
-    // }).start () --> om bara snurra en gång
   }).start();
 
   const RotateData = rotateValueHolder.interpolate({
@@ -36,34 +27,14 @@ const StartingScreen = () => {
   }, 1500);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.containerCenter}>
       <View>
         <Animated.Image
           source={require("../assets/scratch_cat.png")}
-          style={[styles.logo, { transform: [{ rotate: RotateData }] }]}
-        />
+          style={[styles.catLogo, { transform: [{ rotate: RotateData }] }]} />
       </View>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#4C97FF",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    color: "#4c94fc",
-    fontWeight: "bold",
-    fontSize: 100,
-  },
-  logo: {
-    width: 150,
-    height: 150,
-    resizeMode: "stretch",
-  },
-});
 
 export default StartingScreen;

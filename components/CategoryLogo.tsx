@@ -7,7 +7,7 @@ interface Props {
   onPress?: () => void;
 }
 
-const CategoryLogo: React.FC<Props> = ({source, category, onPress}) => {
+const CategoryLogo: React.FC<Props> = ({ source, category, onPress }) => {
     return(
       <View style={styles.box}>
           <View style={styles.innerbox}>

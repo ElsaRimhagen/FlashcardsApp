@@ -1,13 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-
 import styles from "../styles";
-
 import Header from "../components/Header";
 import CategoryLogo from "../components/CategoryLogo";
-
 import { StackParams } from "../App";
-
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
 
@@ -21,12 +17,11 @@ const Menu = ( ) => {
           source={require("../assets/motion.png")}
           category="Rörelse"
           onPress={() => {
-            navigation.navigate("MotionMenu");
-          }}
+            navigation.navigate("MotionMenu"); }} 
         />
         <CategoryLogo
           source={require("../assets/looks.png")}
-          category="Utseende"
+          category="Utseende" 
         />
         <CategoryLogo source={require("../assets/sound.png")} category="Ljud" />
         <CategoryLogo
