@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
   scrollContainer: {
     width: "100%",
-    height: "85%",
+    height: "65%",
     backgroundColor: colors.background,
     // padding: 15,
     flexDirection: "row",
@@ -48,6 +48,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  blueContainer:{
+    width: "100%",
+    height: "10%",
+    backgroundColor: colors.background,
+    alignItems: "center",
+    justifyContent: "center"
+  },
 
   // Headers & Text //
   headerStyle: {
@@ -62,7 +69,12 @@ const styles = StyleSheet.create({
     fontSize: 80,
     // padding: 30,
   },
-  textStyle: {
+  textStyle:{
+    color: colors.text,
+    fontFamily: "American-Typewriter",
+    fontSize: 30,
+  },
+  categorytextStyle: {
     color: colors.headers,
     fontFamily: "American-Typewriter",
     fontSize: 30,

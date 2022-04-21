@@ -17,7 +17,7 @@ const CategoryLogo: React.FC<Props> = ({ source, category, onPress }) => {
               <Image
                 style={styles.imgStyle}
                 source={source} />
-              <Text style={styles.textStyle}> {category} </Text>
+              <Text style={styles.categorytextStyle}> {category} </Text>
             </TouchableOpacity>
           </View>
         </View>

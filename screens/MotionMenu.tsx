@@ -1,9 +1,10 @@
 import React from "react";
 import { View, ScrollView, Image, TouchableOpacity } from "react-native";
-import ClickableBlock from "../components/clickableBlock";
+import ClickableBlock from "../components/ClickableBlock";
 import GoingBack from "../components/GoingBack";
 import Header from "../components/Header";
 import styles from "../styles";
+import TextParagraph from "../components/TextParagraph";
 import { StackParams } from "../App";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
@@ -36,25 +37,15 @@ const MotionMenu = () => {
       </View>
     );
   };
-  // const GoingBack = () => {
-  //   return (
-  //     <TouchableOpacity
-  //       style={styles.GoBackTouchableOpacity}
-  //       onPress={() => navigation.goBack()}
-  //     >
-  //       <Image
-  //         style={styles.GoBackStyle}
-  //         source={require("../assets/pil.png")}
-  //       />
-  //     </TouchableOpacity>
-  //   );
-  // };
-
+ 
   return (
     <View style={styles.containerCenter}>
       <Header title="Rörelse" />
+      <TextParagraph text_row1 = "kontrollerar din" text_row2 = "Sprites rörelser" />
       <ScrollContainer />
-      <GoingBack onPress={() => navigation.goBack()} />
+      <View style={styles.blueContainer}> 
+        <GoingBack onPress={() => navigation.goBack()} />
+      </View> 
     </View>
   );
 };
