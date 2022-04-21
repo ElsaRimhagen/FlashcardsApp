@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
-    
   },
   box: {
     width: "50%",
@@ -48,12 +47,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  blueContainer:{
+  blueContainer: {
     width: "100%",
     height: "10%",
     backgroundColor: colors.background,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
 
   // Headers & Text //
@@ -69,7 +68,7 @@ const styles = StyleSheet.create({
     fontSize: 80,
     // padding: 30,
   },
-  textStyle:{
+  textStyle: {
     color: colors.text,
     fontFamily: "American-Typewriter",
     fontSize: 30,
@@ -89,8 +88,8 @@ const styles = StyleSheet.create({
   },
   GoBackStyle: {
     resizeMode: "contain",
-    width: 80,
-    height: 80,
+    width: 60,
+    height: 60,
   },
   catLogo: {
     width: 150,
@@ -108,12 +107,12 @@ const styles = StyleSheet.create({
   },
   GoBackTouchableOpacity: {
     position: "absolute",
-    width: 80,
-    height: 80,
+    width: 60,
+    height: 60,
     alignItems: "center",
     justifyContent: "center",
-    left: 10,
-    bottom: 10,
+    left: 15,
+    bottom: 15,
   },
 });
 
