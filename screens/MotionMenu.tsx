@@ -7,7 +7,6 @@ import { StackParams } from "../App";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
 
-
 const MotionMenu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
@@ -50,13 +49,11 @@ const MotionMenu = () => {
 
   return (
     <View style={styles.containerCenter}>
-      <Header title = "Rörelse" />
+      <Header title="Rörelse" />
       <ScrollContainer />
       <GoingBack />
     </View>
   );
 };
-
-
 
 export default MotionMenu;
