@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "./assets/colors"
+import { colors } from "./assets/colors";
 
 const styles = StyleSheet.create({
   center: {
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  
+
   boxContainer: {
     width: "100%",
     height: "85%",
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   scrollContainer: {
     width: "80%",
     height: "85%",
-    backgroundColor: "#4C97FF",
+    backgroundColor: colors.background,
     padding: 15,
     flexDirection: "row",
     flexWrap: "wrap",
