@@ -11,6 +11,8 @@ const Menu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
   const Boxes = () => {
+    const handlePress = () => Alert.alert("Kommer i framtida uppdateringar");
+
     return (
       <View style={styles.boxContainer}>
         <CategoryLogo
@@ -23,38 +25,38 @@ const Menu = () => {
         <CategoryLogo
           source={require("../assets/looks.png")}
           category="Utseende"
-          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
+          onPress={handlePress}
         />
         <CategoryLogo
           source={require("../assets/sound.png")}
           category="Ljud"
-          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
+          onPress={handlePress}
         />
 
         <CategoryLogo
           source={require("../assets/events.png")}
           category="Händelser"
-          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
+          onPress={handlePress}
         />
         <CategoryLogo
           source={require("../assets/controll.png")}
           category="Kontroll"
-          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
+          onPress={handlePress}
         />
         <CategoryLogo
           source={require("../assets/feel.png")}
           category="Känna av"
-          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
+          onPress={handlePress}
         />
         <CategoryLogo
           source={require("../assets/operations.png")}
           category="Operatorer"
-          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
+          onPress={handlePress}
         />
         <CategoryLogo
           source={require("../assets/variables.png")}
           category="Variabler"
-          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
+          onPress={handlePress}
         />
       </View>
     );
