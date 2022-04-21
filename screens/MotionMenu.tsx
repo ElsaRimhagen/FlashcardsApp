@@ -1,44 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
+import { View, ScrollView, Image, TouchableOpacity } from "react-native";
+import ClickableBlock from "../components/clickableBlock";
+import Header from "../components/Header";
+import styles from "../styles";
+import { StackParams } from "../App";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { useNavigation } from "@react-navigation/core";
 
-import {
-  StyleSheet,
-  Text,
-  View,
-  ScrollView,
-  Image,
-  TouchableOpacity,
-} from "react-native";
 
-const MotionMenu = ({ navigation }: { navigation: any }) => {
-  const Header = () => {
-    return (
-      <View style={styles.header}>
-        <Text style={styles.titleStyle}>Rörelse</Text>
-      </View>
-    );
-  };
+const MotionMenu = () => {
+  const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
+
   const ScrollContainer = () => {
     return (
-      <View style={styles.boxContainer}>
+      <View style={styles.scrollContainer}>
         <ScrollView>
-          <TouchableOpacity style={styles.clickStyle}>
-            <Image
-              source={require("../assets/move_10steps.png")}
-              style={styles.imgStyle}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.clickStyle}>
-            <Image
-              source={require("../assets/turn_right_15deg.png")}
-              style={styles.imgStyle}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.clickStyle}>
-            <Image
-              source={require("../assets/turn_left_15deg.png")}
-              style={styles.imgStyle}
-            />
-          </TouchableOpacity>
+          <ClickableBlock source = {require("../assets/move_10steps.png")} />
+          <ClickableBlock source={require("../assets/turn_right_15deg.png")} />
+          <ClickableBlock source={require("../assets/turn_left_15deg.png")} />
+          <ClickableBlock source = {require("../assets/move_10steps.png")} />
         </ScrollView>
       </View>
     );
@@ -46,11 +26,11 @@ const MotionMenu = ({ navigation }: { navigation: any }) => {
   const GoingBack = () => {
     return (
       <TouchableOpacity
-        style={styles.touchableOpacity}
+        style={styles.GoBackTouchableOpacity}
         onPress={() => navigation.goBack()}
       >
         <Image
-          style={styles.floatingButton}
+          style={styles.GoBackStyle}
           source={require("../assets/pil.png")}
         />
       </TouchableOpacity>
@@ -58,69 +38,14 @@ const MotionMenu = ({ navigation }: { navigation: any }) => {
   };
 
   return (
-    <View style={styles.container}>
-      <Header />
+    <View style={styles.containerCenter}>
+      <Header title = "Rörelse" />
       <ScrollContainer />
       <GoingBack />
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#4C97FF",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  header: {
-    width: "100%",
-    height: "15%",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  titleStyle: {
-    color: "#F8A839",
-    fontFamily: "American-Typewriter",
-    fontSize: 80,
-    // padding: 30,
-  },
-  boxContainer: {
-    width: "80%",
-    height: "85%",
-    backgroundColor: "#4C97FF",
-    padding: 15,
-    flexDirection: "row",
-    flexWrap: "wrap",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  imgStyle: {
-    width: 250,
-    height: 75,
-    resizeMode: "contain",
-    padding: 10,
-    margin: 5,
-  },
 
-  clickStyle: {
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  touchableOpacity: {
-    position: "absolute",
-    width: 80,
-    height: 80,
-    alignItems: "center",
-    justifyContent: "center",
-    left: 30,
-    bottom: 30,
-  },
-  floatingButton: {
-    resizeMode: "contain",
-    width: 80,
-    height: 80,
-  },
-});
 
 export default MotionMenu;

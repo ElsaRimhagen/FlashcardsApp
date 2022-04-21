@@ -1,7 +1,10 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  
+  center: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
   // Containers //
   contatiner: {
     flex: 1,
@@ -13,6 +16,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  
   boxContainer: {
     width: "100%",
     height: "85%",
@@ -20,6 +24,16 @@ const styles = StyleSheet.create({
     padding: 0,
     flexDirection: "row",
     flexWrap: "wrap",
+  },
+  scrollContainer: {
+    width: "80%",
+    height: "85%",
+    backgroundColor: "#4C97FF",
+    padding: 15,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "center",
   },
   box: {
     width: "50%",
@@ -60,14 +74,31 @@ const styles = StyleSheet.create({
     height: 80,
     resizeMode: "stretch",
   },
-  logoStyle: {
-    alignItems: "center",
-    justifyContent: "center",
+  GoBackStyle: {
+    resizeMode: "contain",
+    width: 80,
+    height: 80,
   },
   catLogo: {
     width: 150,
     height: 150,
     resizeMode: "stretch",
+  },
+  blockStyle: {
+    width: 250,
+    height: 75,
+    resizeMode: "contain",
+    padding: 10,
+    margin: 5,
+  },
+  GoBackTouchableOpacity: {
+    position: "absolute",
+    width: 80,
+    height: 80,
+    alignItems: "center",
+    justifyContent: "center",
+    left: 30,
+    bottom: 30,
   },
 });
 
