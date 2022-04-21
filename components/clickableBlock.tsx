@@ -7,14 +7,10 @@ interface Props {
 }
 
 const ClickableBlock: React.FC<Props> = ({ source, onPress }) => {
-    return(
-        <TouchableOpacity 
-            style={styles.center}
-            onPress={onPress} >
-        <Image
-            style={styles.blockStyle}
-            source={source} />
-      </TouchableOpacity>
+  return (
+    <TouchableOpacity style={styles.center} onPress={onPress}>
+      <Image style={styles.blockStyle} source={source} />
+    </TouchableOpacity>
   );
 };
 

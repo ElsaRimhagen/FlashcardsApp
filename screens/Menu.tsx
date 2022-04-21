@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Alert } from "react-native";
 import styles from "../styles";
 import Header from "../components/Header";
 import CategoryLogo from "../components/CategoryLogo";
@@ -17,32 +17,44 @@ const Menu = () => {
           source={require("../assets/motion.png")}
           category="Rörelse"
           onPress={() => {
-            navigation.navigate("MotionMenu"); }} 
+            navigation.navigate("MotionMenu");
+          }}
         />
         <CategoryLogo
           source={require("../assets/looks.png")}
-          category="Utseende" 
+          category="Utseende"
+          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
         />
-        <CategoryLogo source={require("../assets/sound.png")} category="Ljud" />
+        <CategoryLogo
+          source={require("../assets/sound.png")}
+          category="Ljud"
+          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
+        />
+
         <CategoryLogo
           source={require("../assets/events.png")}
           category="Händelser"
+          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
         />
         <CategoryLogo
           source={require("../assets/controll.png")}
           category="Kontroll"
+          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
         />
         <CategoryLogo
           source={require("../assets/feel.png")}
           category="Känna av"
+          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
         />
         <CategoryLogo
           source={require("../assets/operations.png")}
           category="Operatorer"
+          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
         />
         <CategoryLogo
           source={require("../assets/variables.png")}
           category="Variabler"
+          onPress={() => Alert.alert("Kommer i framtida uppdateringar")}
         />
       </View>
     );

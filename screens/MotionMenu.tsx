@@ -1,6 +1,7 @@
 import React from "react";
 import { View, ScrollView, Image, TouchableOpacity } from "react-native";
 import ClickableBlock from "../components/clickableBlock";
+import GoingBack from "../components/GoingBack";
 import Header from "../components/Header";
 import styles from "../styles";
 import { StackParams } from "../App";
@@ -35,25 +36,25 @@ const MotionMenu = () => {
       </View>
     );
   };
-  const GoingBack = () => {
-    return (
-      <TouchableOpacity
-        style={styles.GoBackTouchableOpacity}
-        onPress={() => navigation.goBack()}
-      >
-        <Image
-          style={styles.GoBackStyle}
-          source={require("../assets/pil.png")}
-        />
-      </TouchableOpacity>
-    );
-  };
+  // const GoingBack = () => {
+  //   return (
+  //     <TouchableOpacity
+  //       style={styles.GoBackTouchableOpacity}
+  //       onPress={() => navigation.goBack()}
+  //     >
+  //       <Image
+  //         style={styles.GoBackStyle}
+  //         source={require("../assets/pil.png")}
+  //       />
+  //     </TouchableOpacity>
+  //   );
+  // };
 
   return (
     <View style={styles.containerCenter}>
       <Header title="Rörelse" />
       <ScrollContainer />
-      <GoingBack />
+      <GoingBack onPress={() => navigation.goBack()} />
     </View>
   );
 };
