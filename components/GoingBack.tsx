@@ -1,4 +1,4 @@
-import { TouchableOpacity, Image } from "react-native";
+import { TouchableOpacity, Image, View } from "react-native";
 import styles from "../styles";
 
 interface Props {
@@ -7,13 +7,15 @@ interface Props {
 
 const GoingBack: React.FC<Props> = ({ onPress }) => {
   return (
-    <TouchableOpacity 
-      style={styles.GoBackTouchableOpacity} 
-      onPress={onPress}>
-      <Image 
-      style={styles.GoBackStyle} 
-      source={require("../assets/pil.png")} />
-    </TouchableOpacity>
+    <View style={styles.blueContainer}> 
+      <TouchableOpacity 
+        style={styles.GoBackTouchableOpacity} 
+        onPress={onPress}>
+        <Image 
+        style={styles.GoBackStyle} 
+        source={require("../assets/pil.png")} />
+      </TouchableOpacity>
+    </View>
   );
 };
 
