@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors } from "./assets/colors"
 
 const styles = StyleSheet.create({
   center: {
@@ -8,11 +9,11 @@ const styles = StyleSheet.create({
   // Containers //
   contatiner: {
     flex: 1,
-    backgroundColor: "#4C97FF",
+    backgroundColor: colors.background,
   },
   containerCenter: {
     flex: 1,
-    backgroundColor: "#4C97FF",
+    backgroundColor: colors.background,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
   boxContainer: {
     width: "100%",
     height: "85%",
-    backgroundColor: "#4C97FF",
+    backgroundColor: colors.background,
     padding: 0,
     flexDirection: "row",
     flexWrap: "wrap",
@@ -39,11 +40,11 @@ const styles = StyleSheet.create({
     width: "50%",
     height: "25%",
     padding: 5,
-    backgroundColor: "#4C97FF",
+    backgroundColor: colors.background,
   },
   innerbox: {
     flex: 1,
-    backgroundColor: "#4C97FF",
+    backgroundColor: colors.background,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -56,13 +57,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   titleStyle: {
-    color: "#F8A839",
+    color: colors.headers,
     fontFamily: "American-Typewriter",
     fontSize: 80,
     // padding: 30,
   },
   textStyle: {
-    color: "#F8A839",
+    color: colors.headers,
     fontFamily: "American-Typewriter",
     fontSize: 30,
     // padding: 10,
