@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-
   boxContainer: {
     width: "100%",
     height: "85%",
@@ -27,14 +26,15 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   scrollContainer: {
-    width: "80%",
+    width: "100%",
     height: "85%",
     backgroundColor: colors.background,
-    padding: 15,
+    // padding: 15,
     flexDirection: "row",
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
+    
   },
   box: {
     width: "50%",
@@ -84,13 +84,15 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     resizeMode: "stretch",
+    alignItems: "center",
+    justifyContent: "center",
   },
   blockStyle: {
-    width: 250,
-    height: 75,
-    resizeMode: "contain",
-    padding: 10,
-    margin: 5,
+    //width: 250,
+    height: 100,
+    resizeMode: "center",
+    // padding: 10,
+    // margin: 5,
   },
   GoBackTouchableOpacity: {
     position: "absolute",
