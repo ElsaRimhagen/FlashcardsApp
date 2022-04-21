@@ -17,11 +17,12 @@ const Menu = () => {
           source={require("../assets/motion.png")}
           category="Rörelse"
           onPress={() => {
-            navigation.navigate("MotionMenu"); }} 
+            navigation.navigate("MotionMenu");
+          }}
         />
         <CategoryLogo
           source={require("../assets/looks.png")}
-          category="Utseende" 
+          category="Utseende"
         />
         <CategoryLogo source={require("../assets/sound.png")} category="Ljud" />
         <CategoryLogo

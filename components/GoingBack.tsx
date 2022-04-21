@@ -1,20 +1,20 @@
-import { Text, View, TouchableOpacity, Image } from "react-native";
+import { TouchableOpacity, Image } from "react-native";
 import styles from "../styles";
 
 import { StackParams } from "../App";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
 
-export const navigation =
-  useNavigation<NativeStackNavigationProp<StackParams>>();
+interface Props {
+  onPress?: () => void;
+}
 
-export const GoingBack: React.FC = () => {
+const GoingBack: React.FC<Props> = ({ onPress }) => {
   return (
-    <TouchableOpacity
-      style={styles.GoBackTouchableOpacity}
-      onPress={() => navigation.goBack()}
-    >
+    <TouchableOpacity style={styles.GoBackTouchableOpacity} onPress={onPress}>
       <Image style={styles.GoBackStyle} source={require("../assets/pil.png")} />
     </TouchableOpacity>
   );
 };
+
+export default GoingBack;
