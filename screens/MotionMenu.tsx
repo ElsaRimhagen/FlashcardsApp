@@ -16,8 +16,8 @@ const MotionMenu = () => {
         <ScrollView>
           
           <ClickableBlock source = {require("../assets/move_10steps.png")} />
-          <ClickableBlock source={require("../assets/turn_right_15deg.png")} />
-          <ClickableBlock source={require("../assets/turn_left_15deg.png")} />
+          <ClickableBlock source = {require("../assets/turn_right_15deg.png")} />
+          <ClickableBlock source= {require("../assets/turn_left_15deg.png")} />
           <ClickableBlock source = {require("../assets/go_to_random.png")} />
           <ClickableBlock source = {require("../assets/goto_x_y.png")} />
           <ClickableBlock source = {require("../assets/glide_secs_random.png")} />

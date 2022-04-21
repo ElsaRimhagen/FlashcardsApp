@@ -98,8 +98,8 @@ const styles = StyleSheet.create({
     height: 80,
     alignItems: "center",
     justifyContent: "center",
-    left: 30,
-    bottom: 30,
+    left: 10,
+    bottom: 10,
   },
 });
 
