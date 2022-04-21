@@ -12,7 +12,7 @@ const CategoryLogo: React.FC<Props> = ({ source, category, onPress }) => {
       <View style={styles.box}>
           <View style={styles.innerbox}>
             <TouchableOpacity
-              style={styles.logoStyle}
+              style={styles.center}
               onPress={onPress} >
               <Image
                 style={styles.imgStyle}
