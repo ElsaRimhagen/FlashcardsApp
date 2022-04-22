@@ -42,7 +42,7 @@ const MotionMenu = () => {
         text_row2="Sprites rörelser"
       />
       <ScrollContainer />
-      <GoingBack onPress={() => navigation.goBack()} />
+      <GoingBack />
     </View>
   );
 };

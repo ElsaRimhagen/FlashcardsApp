@@ -3,7 +3,7 @@ import styles from "../styles";
 
 interface Props {
   text_row1: string;
-  text_row2: string;
+  text_row2?: string;
 }
 
 const TextParagraph: React.FC<Props> = ({ text_row1, text_row2 }) => {
