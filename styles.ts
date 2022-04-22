@@ -6,8 +6,30 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+
   // Containers //
-  contatiner: {
+  blueContainer: {
+    width: "100%",
+    height: "10%",
+    backgroundColor: colors.background,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  box: {
+    width: "50%",
+    height: "25%",
+    padding: 5,
+    backgroundColor: colors.background,
+  },
+  boxContainer: {
+    width: "100%",
+    height: "85%",
+    backgroundColor: colors.background,
+    padding: 0,
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+  container: {
     flex: 1,
     backgroundColor: colors.background,
   },
@@ -17,13 +39,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  boxContainer: {
-    width: "100%",
-    height: "85%",
+  innerbox: {
+    flex: 1,
     backgroundColor: colors.background,
-    padding: 0,
-    flexDirection: "row",
-    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "center",
   },
   scrollContainer: {
     width: "100%",
@@ -35,32 +55,24 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  box: {
-    width: "50%",
-    height: "25%",
-    padding: 5,
-    backgroundColor: colors.background,
-  },
-  innerbox: {
-    flex: 1,
-    backgroundColor: colors.background,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  blueContainer: {
-    width: "100%",
-    height: "10%",
-    backgroundColor: colors.background,
-    alignItems: "center",
-    justifyContent: "center",
-  },
 
   // Headers & Text //
+  categorytextStyle: {
+    color: colors.headers,
+    fontFamily: "American-Typewriter",
+    fontSize: 30,
+    // padding: 10,
+  },
   headerStyle: {
     width: "100%",
     height: "15%",
     alignItems: "center",
     justifyContent: "center",
+  },
+  textStyle: {
+    color: colors.text,
+    fontFamily: "American-Typewriter",
+    fontSize: 30,
   },
   titleStyle: {
     color: colors.headers,
@@ -68,28 +80,15 @@ const styles = StyleSheet.create({
     fontSize: 80,
     // padding: 30,
   },
-  textStyle: {
-    color: colors.text,
-    fontFamily: "American-Typewriter",
-    fontSize: 30,
-  },
-  categorytextStyle: {
-    color: colors.headers,
-    fontFamily: "American-Typewriter",
-    fontSize: 30,
-    // padding: 10,
-  },
 
   // Images & logotypes //
-  imgStyle: {
-    width: 80,
-    height: 80,
-    resizeMode: "stretch",
-  },
-  GoBackStyle: {
-    resizeMode: "contain",
-    width: 60,
+  blockStyle: {
     height: 60,
+    resizeMode: "contain",
+    padding: 10,
+    margin: 10,
+    alignItems: "center",
+    justifyContent: "center",
   },
   catLogo: {
     width: 150,
@@ -98,13 +97,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  blockStyle: {
-    height: 60,
+  GoBackStyle: {
     resizeMode: "contain",
-    padding: 10,
-    margin: 10,
-    alignItems: "center",
-    justifyContent: "center",
+    width: 60,
+    height: 60,
   },
   GoBackTouchableOpacity: {
     position: "absolute",
@@ -114,6 +110,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     left: 15,
     bottom: 15,
+  },
+  imgStyle: {
+    width: 80,
+    height: 80,
+    resizeMode: "stretch",
   },
 });
 

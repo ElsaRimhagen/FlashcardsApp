@@ -63,7 +63,7 @@ const Menu = () => {
   };
 
   return (
-    <View style={styles.contatiner}>
+    <View style={styles.container}>
       <Header title="Meny" />
       <Boxes />
     </View>
