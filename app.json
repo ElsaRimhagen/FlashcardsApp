@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "TestApp",
-    "slug": "TestApp",
+    "name": "FlashcardsApp",
+    "slug": "FlashcardsApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icons/icon.png",
+    "icon": "./assets/icons/applogo.png",
     "splash": {
       "image": "./assets/icons/splash_cat.png",
       "resizeMode": "contain",

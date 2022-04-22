@@ -34,7 +34,6 @@ const Menu = () => {
           category="Ljud"
           onPress={handlePress}
         />
-
         <CategoryLogo
           source={require("../assets/categories/events.png")}
           category="Händelser"

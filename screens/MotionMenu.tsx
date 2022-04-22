@@ -1,5 +1,5 @@
 import React from "react";
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, Alert } from "react-native";
 
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
@@ -13,12 +13,14 @@ import { StackParams } from "../App";
 
 const MotionMenu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
+  const handlePress = () => Alert.alert("Hej! :)");
 
   const ScrollContainer = () => {
     return (
       <View style={styles.scrollContainer}>
         <ScrollView>
-          <ClickableBlock source={require("../assets/blocks/move_10.png")} />
+          <ClickableBlock source={require("../assets/blocks/move_10.png")} 
+          onPress ={handlePress} />
           <ClickableBlock
             source={require("../assets/blocks/turn_right_15deg.png")}
           />
