@@ -1,5 +1,5 @@
 import React from "react";
-import { View, ScrollView, FlatList } from "react-native";
+import { View, ScrollView } from "react-native";
 
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
