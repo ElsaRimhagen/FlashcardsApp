@@ -19,7 +19,7 @@ const GoingBack: React.FC<Props> = ({ onPress }) => {
         onPress={() => navigation.goBack()} >
         <Image 
         style={styles.GoBackStyle} 
-        source={require("../assets/pil.png")} />
+        source={require("../assets/icons/pil.png")} />
       </TouchableOpacity>
     </View>
   );

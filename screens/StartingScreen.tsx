@@ -30,7 +30,7 @@ const StartingScreen = () => {
     <View style={styles.containerCenter}>
       <View>
         <Animated.Image
-          source={require("../assets/scratch_cat.png")}
+          source={require("../assets/icons/scratch_cat.png")}
           style={[styles.catLogo, { transform: [{ rotate: RotateData }] }]}
         />
       </View>
