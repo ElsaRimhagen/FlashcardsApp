@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+
 import styles from "../styles";
 
 interface Props {
@@ -6,11 +7,11 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ title }) => {
-    return (
-      <View style={styles.headerStyle}>
-        <Text style={styles.titleStyle}> {title} </Text>
-      </View>
-    );
-  };
+  return (
+    <View style={styles.headerStyle}>
+      <Text style={styles.titleStyle}> {title} </Text>
+    </View>
+  );
+};
 
 export default Header;

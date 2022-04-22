@@ -1,8 +1,10 @@
-import { Animated, View, Easing } from "react-native";
 import React from "react";
-import { StackParams } from "../App";
+import { Animated, View, Easing } from "react-native";
+
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
+
+import { StackParams } from "../App";
 import styles from "../styles";
 
 const StartingScreen = () => {

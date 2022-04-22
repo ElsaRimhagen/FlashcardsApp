@@ -1,13 +1,15 @@
 import React from "react";
 import { View, ScrollView, FlatList } from "react-native";
+
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { useNavigation } from "@react-navigation/core";
+
 import ClickableBlock from "../components/ClickableBlock";
 import GoingBack from "../components/GoingBack";
 import Header from "../components/Header";
 import styles from "../styles";
 import TextParagraph from "../components/TextParagraph";
 import { StackParams } from "../App";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { useNavigation } from "@react-navigation/core";
 
 const MotionMenu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();

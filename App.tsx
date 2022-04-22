@@ -1,8 +1,10 @@
 import React from "react";
+
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
 import FlashcardsView from "./screens/FlashcardView";
 import Menu from "./screens/Menu";
 import MotionMenu from "./screens/MotionMenu";
@@ -34,7 +36,8 @@ const App = () => {
           headerShown: false,
           headerStyle: { backgroundColor: "blue" },
           title: "",
-        }} >
+        }}
+      >
         <Stack.Screen name="StartingScreen" component={StartingScreen} />
         <Stack.Screen name="FlashcardView" component={FlashcardsView} />
         <Stack.Screen name="Menu" component={Menu} />

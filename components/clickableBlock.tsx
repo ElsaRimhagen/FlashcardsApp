@@ -1,4 +1,5 @@
 import { Image, TouchableOpacity } from "react-native";
+
 import styles from "../styles";
 
 interface Props {

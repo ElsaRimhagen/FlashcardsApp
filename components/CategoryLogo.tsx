@@ -1,4 +1,5 @@
 import { Text, View, Image, TouchableOpacity } from "react-native";
+
 import styles from "../styles";
 
 interface Props {
@@ -8,19 +9,15 @@ interface Props {
 }
 
 const CategoryLogo: React.FC<Props> = ({ source, category, onPress }) => {
-    return(
-      <View style={styles.box}>
-          <View style={styles.innerbox}>
-            <TouchableOpacity
-              style={styles.center}
-              onPress={onPress} >
-              <Image
-                style={styles.imgStyle}
-                source={source} />
-              <Text style={styles.categorytextStyle}> {category} </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
+  return (
+    <View style={styles.box}>
+      <View style={styles.innerbox}>
+        <TouchableOpacity style={styles.center} onPress={onPress}>
+          <Image style={styles.imgStyle} source={source} />
+          <Text style={styles.categorytextStyle}> {category} </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
   );
 };
 
