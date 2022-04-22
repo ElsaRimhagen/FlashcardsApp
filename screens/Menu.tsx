@@ -16,45 +16,45 @@ const Menu = () => {
     return (
       <View style={styles.boxContainer}>
         <CategoryLogo
-          source={require("../assets/motion.png")}
+          source={require("../assets/categories/motion.png")}
           category="Rörelse"
           onPress={() => {
             navigation.navigate("MotionMenu");
           }}
         />
         <CategoryLogo
-          source={require("../assets/looks.png")}
+          source={require("../assets/categories/looks.png")}
           category="Utseende"
           onPress={handlePress}
         />
         <CategoryLogo
-          source={require("../assets/sound.png")}
+          source={require("../assets/categories/sound.png")}
           category="Ljud"
           onPress={handlePress}
         />
 
         <CategoryLogo
-          source={require("../assets/events.png")}
+          source={require("../assets/categories/events.png")}
           category="Händelser"
           onPress={handlePress}
         />
         <CategoryLogo
-          source={require("../assets/controll.png")}
+          source={require("../assets/categories/controll.png")}
           category="Kontroll"
           onPress={handlePress}
         />
         <CategoryLogo
-          source={require("../assets/feel.png")}
+          source={require("../assets/categories/feel.png")}
           category="Känna av"
           onPress={handlePress}
         />
         <CategoryLogo
-          source={require("../assets/operations.png")}
+          source={require("../assets/categories/operations.png")}
           category="Operatorer"
           onPress={handlePress}
         />
         <CategoryLogo
-          source={require("../assets/variables.png")}
+          source={require("../assets/categories/variables.png")}
           category="Variabler"
           onPress={handlePress}
         />

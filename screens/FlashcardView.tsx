@@ -100,7 +100,7 @@ const FlashcardView = () => {
       <TouchableOpacity style={styles.touchableOpacity} onPress={clickHandler}>
         <Image
           style={styles.floatingButton}
-          source={require("../assets/pil.png")}
+          source={require("../assets/icons/pil.png")}
         />
       </TouchableOpacity>
     );

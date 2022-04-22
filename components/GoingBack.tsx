@@ -13,7 +13,7 @@ const GoingBack: React.FC<Props> = ({ onPress }) => {
         onPress={onPress}>
         <Image 
         style={styles.GoBackStyle} 
-        source={require("../assets/pil.png")} />
+        source={require("../assets/icons/pil.png")} />
       </TouchableOpacity>
     </View>
   );
