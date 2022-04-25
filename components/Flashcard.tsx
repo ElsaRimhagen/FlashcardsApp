@@ -39,43 +39,33 @@ const FlipcardAnimation = () => {
   });
 
   interface Props{
-      frontside: any;
-      backside: any;
+      frontside_block: any;
+      translation: string;
   }
 
 
-  const Flashcard: React.FC<Props> = ({ frontside, backside}) => {
+  const Flashcard: React.FC<Props> = ({ frontside_block, translation}) => {
     return (
-      
-      <View style={styles.flashcardContainer}>
-        <TouchableOpacity style={styles.center} onPress={FlipcardAnimation}>
-          <View>
-          <Animated.View 
-          style = {[styles.outerflashcardStyle, 
-          {transform: [{rotateY: frontInterpolate}]} ]} >
-            <Animated.View
-              style = {[
-                styles.flashcardStyle, 
-                ]}>
-              <Image style={styles.bigBlockStyle} source = {frontside}/>
-            </Animated.View>
+    <View style={styles.flashcardContainer}>
+      <TouchableOpacity style={styles.center} onPress={FlipcardAnimation}>
+        <View>
+
+          <Animated.View style = {[styles.flashcardStyle, {transform: [{rotateY: frontInterpolate}]} ]}>
+              <Image style={styles.bigBlockStyle} source = {frontside_block}/>
           </Animated.View>
 
           <Animated.View 
-          style={[styles.outerflashcardStyle,
-          styles.outerflashcardBacksideStyle,
-          {transform: [{ rotateY: backInterpolate }] },
-          ]}>
-            <Animated.View style ={[
-              styles.flashcardStyle,
-            ]}>
-              <Text style={styles.textStyle}>{backside}</Text>
-              </Animated.View>
-            </Animated.View>
+            style ={[styles.flashcardStyle,
+              styles.flashcardBacksideStyle,
+              {transform: [{ rotateY: backInterpolate }]} ]}>
+              <View style = {styles.translationContainerStyle}>
+                <Text style={styles.translationStyle}> {translation} </Text>
+              </View>
+          </Animated.View>
           
-          </View>
-        </TouchableOpacity>
-      </View>
+        </View>
+      </TouchableOpacity>
+    </View>
     );
   };
 

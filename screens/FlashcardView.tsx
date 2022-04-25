@@ -13,7 +13,7 @@ const FlashcardView = () => {
     <View style={styles.containerCenter}>
       <GoingBack />
       <Header title= "Vad blir" />
-      <Flashcard frontside= {require("../assets/blocks/move_10.png")} backside = "baksida" />
+      <Flashcard frontside_block= {require("../assets/blocks/move_10.png")} translation = "x = x + 10" />
       <Header title = "i kod?" />
     </View>
   );

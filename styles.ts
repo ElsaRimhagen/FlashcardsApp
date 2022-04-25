@@ -88,6 +88,12 @@ const styles = StyleSheet.create({
     fontSize: 80,
     // padding: 30,
   },
+  translationStyle:{
+    color: colors.text,
+    fontFamily: "American-Typewriter",
+    fontSize: 50,
+    fontWeight: "bold"
+  },
 
   // Images & logotypes //
   blockStyle: {
@@ -99,7 +105,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   bigBlockStyle:{
-    height: 80,
+    height: 100,
     resizeMode: "contain",
     padding: 10,
     margin: 10,
@@ -142,25 +148,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backfaceVisibility: "hidden",
+    borderWidth: 4,
+    borderColor: colors.text
   },
   flashcardBacksideStyle: {
-    backgroundColor: "black",
+    backgroundColor: colors.flashcard,
     position: "absolute",
     top: 0,
   },
-  outerflashcardStyle:{
-    width: 370,
-    height: 270,
-    backgroundColor: colors.text,
+  translationContainerStyle:{
+    width: 270,
+    height: 100,
+    backgroundColor: colors.background,
     alignItems: "center",
     justifyContent: "center",
-    backfaceVisibility: "hidden",
-  },
-  outerflashcardBacksideStyle:{
-    backgroundColor: colors.text,
-    position: "absolute",
-    top: 0,
-
+    borderRadius: 9
   },
 });
 
