@@ -54,14 +54,22 @@ const styles = StyleSheet.create({
   },
   flashcardContainer: {
     // width: "100%",
-    // height: "50%",
-    flex: 1,
+    height: "55%",
+    //flex: 1,
     backgroundColor: colors.background,
     padding: 5,
     flexDirection: "row",
     flexWrap: "wrap",
     alignContent: "center",
     justifyContent: "center",
+  },
+  outerFlashcardContainer:{
+    width: 370,
+    height: 270,
+    backgroundColor: colors.text,
+    alignItems: "center",
+    justifyContent: "center",
+    backfaceVisibility: "hidden",
   },
 
   // Headers & Text //
@@ -98,6 +106,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  bigBlockStyle:{
+    height: 80,
+    resizeMode: "contain",
+    padding: 10,
+    margin: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   catLogo: {
     width: 150,
     height: 150,
@@ -119,7 +135,7 @@ const styles = StyleSheet.create({
     height: 60,
     // alignItems: "center",
     // justifyContent: "center",
-    left: 15,
+    left: 5,
     top: 15,
   },
   imgStyle: {
@@ -128,9 +144,9 @@ const styles = StyleSheet.create({
     resizeMode: "stretch",
   },
   flashcardStyle: {
-    width: 300,
-    height: 200,
-    backgroundColor: "#0B8D69",
+    width: 350,
+    height: 250,
+    backgroundColor: colors.flashcard,
     alignItems: "center",
     justifyContent: "center",
     backfaceVisibility: "hidden",
