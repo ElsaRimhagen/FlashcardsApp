@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-
   // Containers //
   blueContainer: {
     width: "100%",
@@ -53,6 +52,16 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     alignItems: "center",
+    justifyContent: "center",
+  },
+  flashcardContainer: {
+    width: "100%",
+    height: "50%",
+    backgroundColor: colors.background,
+    padding: 5,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignContent: "center",
     justifyContent: "center",
   },
 
@@ -115,6 +124,19 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     resizeMode: "stretch",
+  },
+  flashcardStyle: {
+    width: 300,
+    height: 200,
+    backgroundColor: "#0B8D69",
+    alignItems: "center",
+    justifyContent: "center",
+    backfaceVisibility: "hidden",
+  },
+  flashcardBacksideStyle: {
+    backgroundColor: "black",
+    position: "absolute",
+    top: 0,
   },
 });
 

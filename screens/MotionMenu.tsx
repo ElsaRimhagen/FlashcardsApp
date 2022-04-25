@@ -13,14 +13,15 @@ import { StackParams } from "../App";
 
 const MotionMenu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
-  const handlePress = () => Alert.alert("Hej! :)");
 
   const ScrollContainer = () => {
     return (
       <View style={styles.scrollContainer}>
         <ScrollView>
           <ClickableBlock source={require("../assets/blocks/move_10.png")} 
-          onPress ={handlePress} />
+          onPress={() => {
+            navigation.navigate("FlashcardView");
+          }} />
           <ClickableBlock
             source={require("../assets/blocks/turn_right_15deg.png")}
           />
@@ -56,6 +57,7 @@ const MotionMenu = () => {
 
   return (
     <View style={styles.containerCenter}>
+      
       <Header title="Rörelse" />
       <TextParagraph
         text_row1="kontrollerar din"

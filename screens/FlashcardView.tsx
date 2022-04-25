@@ -1,15 +1,12 @@
-import React, { useState } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  Animated,
-  Image,
-} from "react-native";
+import React from "react";
+import { StyleSheet, Text, View, TouchableOpacity, Animated, Image } from "react-native";
 
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Header from "../components/Header";
+ // import FlipcardAnimation from "../components/FlipcardAnimation";
+ import styles from "../styles";
+ import GoingBack from "../components/GoingBack";
+import Flashcard from "../components/Flashcard";
+
 
 const FlashcardView = () => {
   let animatedValue = new Animated.Value(0);
@@ -19,7 +16,7 @@ const FlashcardView = () => {
     currentValue = value;
   });
 
-  const flipCard = () => {
+  const FlipcardAnimation = () => {
     if (currentValue >= 90) {
       Animated.spring(animatedValue, {
         toValue: 0,
@@ -46,43 +43,25 @@ const FlashcardView = () => {
     outputRange: ["180deg", "360deg"],
   });
 
-  const Header = () => {
-    return (
-      <View style={styles.header}>
-        <Text style={styles.titleStyle}>Vad blir</Text>
-      </View>
-    );
-  };
-
-  const BottomText = () => {
-    return (
-      <View style={styles.header}>
-        <Text style={styles.titleStyle}>i kod?</Text>
-      </View>
-    );
-  };
-
   const FlashcardContainer = () => {
     return (
-      <View style={styles.boxContainer}>
-        <TouchableOpacity style={styles.touchStyle} onPress={flipCard}>
+      <View style={styles.flashcardContainer}>
+        <TouchableOpacity style={styles.center} onPress={FlipcardAnimation}>
           <View>
             <Animated.View
-              style={[
-                styles.flashcardStyle,
-                { transform: [{ rotateY: frontInterpolate }] },
-              ]}
-            >
+              style = {[
+                styles.flashcardStyle, 
+                {transform: [{rotateY: frontInterpolate}]} 
+              ]}>
               <Text style={styles.textStyle}>This is the frontside</Text>
             </Animated.View>
 
             <Animated.View
               style={[
                 styles.flashcardStyle,
-                styles.backsideStyle,
-                { transform: [{ rotateY: backInterpolate }] },
-              ]}
-            >
+                styles.flashcardBacksideStyle,
+                {transform: [{ rotateY: backInterpolate }] },
+              ]}>
               <Text style={styles.textStyle}>This is the backside</Text>
             </Animated.View>
           </View>
@@ -91,96 +70,15 @@ const FlashcardView = () => {
     );
   };
 
-  const clickHandler = () => {
-    alert("Floating button clicked!");
-  };
-
-  const GoingBack = () => {
-    return (
-      <TouchableOpacity style={styles.touchableOpacity} onPress={clickHandler}>
-        <Image
-          style={styles.floatingButton}
-          source={require("../assets/icons/pil.png")}
-        />
-      </TouchableOpacity>
-    );
-  };
-
   return (
-    <View style={styles.container}>
-      <Header />
-      <FlashcardContainer />
-      <BottomText />
+    <View style={styles.containerCenter}>
       <GoingBack />
+      <Header title= "Vad blir" />
+      <FlashcardContainer />
+      <Header title = "i kod?" />
+      
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#4C97FF",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  header: {
-    width: "100%",
-    height: "15%",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  titleStyle: {
-    color: "#F8A839",
-    fontFamily: "American-Typewriter",
-    fontSize: 80,
-    padding: 30,
-  },
-  boxContainer: {
-    width: "100%",
-    height: "50%",
-    backgroundColor: "white",
-    padding: 5,
-    flexDirection: "row",
-    flexWrap: "wrap",
-    alignContent: "center",
-    justifyContent: "center",
-  },
-  flashcardStyle: {
-    width: 300,
-    height: 200,
-    backgroundColor: "#0B8D69",
-    alignItems: "center",
-    justifyContent: "center",
-    backfaceVisibility: "hidden",
-  },
-  textStyle: {
-    color: "#F8A839",
-    fontFamily: "American-Typewriter",
-    fontSize: 30,
-  },
-  backsideStyle: {
-    backgroundColor: "black",
-    position: "absolute",
-    top: 0,
-  },
-  touchStyle: {
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  touchableOpacity: {
-    position: "absolute",
-    width: 80,
-    height: 80,
-    alignItems: "center",
-    justifyContent: "center",
-    left: 30,
-    bottom: 30,
-  },
-  floatingButton: {
-    resizeMode: "contain",
-    width: 80,
-    height: 80,
-  },
-});
 
 export default FlashcardView;
