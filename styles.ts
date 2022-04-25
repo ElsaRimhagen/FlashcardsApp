@@ -107,6 +107,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   GoBackStyle: {
+    position: "absolute",
+    left: 15,
+    top: 15,
     resizeMode: "contain",
     width: 60,
     height: 60,
@@ -118,7 +121,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     left: 15,
-    bottom: 15,
+    top: 15,
   },
   imgStyle: {
     width: 80,
