@@ -18,10 +18,12 @@ const MotionMenu = () => {
     return (
       <View style={styles.scrollContainer}>
         <ScrollView>
-          <ClickableBlock source={require("../assets/blocks/move_10.png")} 
-          onPress={() => {
-            navigation.navigate("FlashcardView");
-          }} />
+          <ClickableBlock
+            source={require("../assets/blocks/move_10.png")}
+            onPress={() => {
+              navigation.navigate("FlashcardView");
+            }}
+          />
           <ClickableBlock
             source={require("../assets/blocks/turn_right_15deg.png")}
           />
@@ -57,14 +59,13 @@ const MotionMenu = () => {
 
   return (
     <View style={styles.containerCenter}>
-      
+      <GoingBack />
       <Header title="Rörelse" />
       <TextParagraph
         text_row1="kontrollerar din"
         text_row2="Sprites rörelser"
       />
       <ScrollContainer />
-      <GoingBack />
     </View>
   );
 };
