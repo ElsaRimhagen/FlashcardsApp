@@ -63,14 +63,6 @@ const styles = StyleSheet.create({
     alignContent: "center",
     justifyContent: "center",
   },
-  outerFlashcardContainer:{
-    width: 370,
-    height: 270,
-    backgroundColor: colors.text,
-    alignItems: "center",
-    justifyContent: "center",
-    backfaceVisibility: "hidden",
-  },
 
   // Headers & Text //
   categorytextStyle: {
@@ -155,6 +147,20 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     position: "absolute",
     top: 0,
+  },
+  outerflashcardStyle:{
+    width: 370,
+    height: 270,
+    backgroundColor: colors.text,
+    alignItems: "center",
+    justifyContent: "center",
+    backfaceVisibility: "hidden",
+  },
+  outerflashcardBacksideStyle:{
+    backgroundColor: colors.text,
+    position: "absolute",
+    top: 0,
+
   },
 });
 
