@@ -70,6 +70,3 @@ const FlipcardAnimation = () => {
   };
 
 export default Flashcard; 
-
-//<Animated.View style={[styles.outerflashcardStyle,styles.outerflashcardBacksideStyle,{transform: [{ rotateY: backInterpolate }] },]} >
-// <Animated.View style = {[styles.outerflashcardStyle, {transform: [{rotateY: frontInterpolate}]} ]}>
