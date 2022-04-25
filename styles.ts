@@ -53,8 +53,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   flashcardContainer: {
-    width: "100%",
-    height: "50%",
+    // width: "100%",
+    // height: "50%",
+    flex: 1,
     backgroundColor: colors.background,
     padding: 5,
     flexDirection: "row",
