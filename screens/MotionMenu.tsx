@@ -31,13 +31,19 @@ const MotionMenu = () => {
           <ClickableBlock
             source={BlockData.turn_right_15deg.source}
             onPress={() => {
-              navigation.navigate("FlashcardView");
+              navigation.navigate("FlashcardView", {
+                frontside_block: BlockData.turn_right_15deg.source,
+                translation: BlockData.turn_right_15deg.translation,
+              });
             }}
           />
           <ClickableBlock
             source={BlockData.turn_left_15deg.source}
             onPress={() => {
-              navigation.navigate("FlashcardView");
+              navigation.navigate("FlashcardView", {
+                frontside_block: BlockData.turn_left_15deg.source,
+                translation: BlockData.turn_left_15deg.translation,
+              });
             }}
           />
           <ClickableBlock
