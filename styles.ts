@@ -14,6 +14,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  littleblueContainer: {
+    width: "100%",
+    height: "5%",
+    backgroundColor: colors.background,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   box: {
     width: "50%",
     height: "25%",
@@ -54,7 +61,7 @@ const styles = StyleSheet.create({
   },
   flashcardContainer: {
     // width: "100%",
-    height: "55%",
+    height: "50%",
     //flex: 1,
     backgroundColor: colors.background,
     padding: 5,
@@ -76,6 +83,11 @@ const styles = StyleSheet.create({
     height: "15%",
     alignItems: "center",
     justifyContent: "center",
+    marginTop: 15
+  },
+  bottomText:{
+    marginTop: -25,
+    marginBottom: 15,
   },
   textStyle: {
     color: colors.text,
@@ -91,7 +103,7 @@ const styles = StyleSheet.create({
   translationStyle: {
     color: colors.text,
     fontFamily: "American-Typewriter",
-    fontSize: 50,
+    fontSize: 25,
     // fontWeight: "bold",
   },
 

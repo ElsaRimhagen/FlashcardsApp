@@ -19,7 +19,7 @@ const MotionMenu = () => {
       <View style={styles.scrollContainer}>
         <ScrollView>
           <ClickableBlock
-            source={require("../assets/blocks/move_10.png")}
+            source = {require("../assets/blocks/move_10.png")}
             onPress={() => {
               navigation.navigate("FlashcardView");
             }}

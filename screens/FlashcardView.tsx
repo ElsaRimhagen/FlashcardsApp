@@ -13,9 +13,9 @@ const FlashcardView = () => {
     <View style={styles.containerCenter}>
       <GoingBack />
       <Header title= "Vad blir" />
-      <Flashcard frontside_block= {require("../assets/blocks/move_10.png")} translation = "x = x + 10" />
+      <Flashcard frontside_block= {require("../assets/blocks/move_10.png")} translation = "sprite.forward(10)" />
       <Header title = "i kod?" />
-      <View style={styles.blueContainer}></View>
+      <View style={styles.littleblueContainer}></View>
     </View>
   );
 };
