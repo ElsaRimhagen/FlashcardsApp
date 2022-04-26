@@ -39,7 +39,7 @@ const backInterpolate = animatedValue.interpolate({
 
 interface Props {
   frontside_block: any;
-  translation: string;
+  translation: any;
 }
 
 const Flashcard: React.FC<Props> = ({ frontside_block, translation }) => {
