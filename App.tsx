@@ -22,6 +22,7 @@ const Stack = createNativeStackNavigator<StackParams>();
 const App = () => {
   let [fontsLoaded] = useFonts({
     "American-Typewriter": require("./assets/fonts/AmericanTypewriterRegular.ttf"),
+    "American-Typewriter-Bold": require("./assets/fonts/AmericanTypewriterBold.ttf"),
   });
 
   if (!fontsLoaded) {

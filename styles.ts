@@ -88,11 +88,11 @@ const styles = StyleSheet.create({
     fontSize: 80,
     // padding: 30,
   },
-  translationStyle:{
+  translationStyle: {
     color: colors.text,
     fontFamily: "American-Typewriter",
     fontSize: 50,
-    fontWeight: "bold"
+    // fontWeight: "bold",
   },
 
   // Images & logotypes //
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  bigBlockStyle:{
+  bigBlockStyle: {
     height: 100,
     resizeMode: "contain",
     padding: 10,
@@ -149,20 +149,20 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     backfaceVisibility: "hidden",
     borderWidth: 4,
-    borderColor: colors.text
+    borderColor: colors.text,
   },
   flashcardBacksideStyle: {
     backgroundColor: colors.flashcard,
     position: "absolute",
     top: 0,
   },
-  translationContainerStyle:{
+  translationContainerStyle: {
     width: 270,
     height: 100,
     backgroundColor: colors.background,
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 9
+    borderRadius: 9,
   },
 });
 
