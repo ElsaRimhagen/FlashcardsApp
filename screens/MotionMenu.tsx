@@ -26,12 +26,21 @@ const MotionMenu = () => {
           />
           <ClickableBlock
             source={require("../assets/blocks/turn_right_15deg.png")}
+            onPress={() => {
+              navigation.navigate("FlashcardView");
+            }}
           />
           <ClickableBlock
             source={require("../assets/blocks/turn_left_15deg.png")}
+            onPress={() => {
+              navigation.navigate("FlashcardView");
+            }}
           />
           <ClickableBlock
             source={require("../assets/blocks/go_to_random.png")}
+            onPress={() => {
+              navigation.navigate("FlashcardView");
+            }}
           />
           <ClickableBlock source={require("../assets/blocks/go_to_x_y.png")} />
           <ClickableBlock
