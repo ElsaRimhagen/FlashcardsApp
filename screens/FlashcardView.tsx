@@ -15,6 +15,7 @@ const FlashcardView = () => {
       <Header title= "Vad blir" />
       <Flashcard frontside_block= {require("../assets/blocks/move_10.png")} translation = "x = x + 10" />
       <Header title = "i kod?" />
+      <View style={styles.blueContainer}></View>
     </View>
   );
 };
