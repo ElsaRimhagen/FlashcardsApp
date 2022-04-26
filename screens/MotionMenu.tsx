@@ -10,6 +10,7 @@ import Header from "../components/Header";
 import styles from "../styles";
 import TextParagraph from "../components/TextParagraph";
 import { StackParams } from "../App";
+import * as BlockData from "../assets/blocks/BlockData";
 
 const MotionMenu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
@@ -19,30 +20,34 @@ const MotionMenu = () => {
       <View style={styles.scrollContainer}>
         <ScrollView>
           <ClickableBlock
-            source = {require("../assets/blocks/move_10.png")}
+            source={BlockData.move10.source}
+            onPress={() => {
+              navigation.navigate("FlashcardView", {
+                frontside_block: BlockData.move10.source ,
+                translation: BlockData.move10.translation,
+              });
+            }}
+          />
+          <ClickableBlock
+            source={BlockData.turn_right_15deg.source}
             onPress={() => {
               navigation.navigate("FlashcardView");
             }}
           />
           <ClickableBlock
-            source={require("../assets/blocks/turn_right_15deg.png")}
+            source={BlockData.turn_left_15deg.source}
             onPress={() => {
               navigation.navigate("FlashcardView");
             }}
           />
           <ClickableBlock
-            source={require("../assets/blocks/turn_left_15deg.png")}
+            source={BlockData.go_to_random.source}
             onPress={() => {
               navigation.navigate("FlashcardView");
             }}
           />
-          <ClickableBlock
-            source={require("../assets/blocks/go_to_random.png")}
-            onPress={() => {
-              navigation.navigate("FlashcardView");
-            }}
-          />
-          <ClickableBlock source={require("../assets/blocks/go_to_x_y.png")} />
+          <ClickableBlock source={BlockData.go_to_x_y.source} />
+
           <ClickableBlock
             source={require("../assets/blocks/glide_secs_random.png")}
           />

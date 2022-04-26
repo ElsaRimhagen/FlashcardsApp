@@ -7,15 +7,20 @@ import GoingBack from "../components/GoingBack";
 import Flashcard from "../components/Flashcard";
 
 
-const FlashcardView = () => {
+
+const FlashcardView= (route: any) => {
+  const { frontside_block, translation } = route.params;
 
   return (
     <View style={styles.containerCenter}>
       <GoingBack />
       <Header title= "Vad blir" />
-      <Flashcard frontside_block= {require("../assets/blocks/move_10.png")} translation = "sprite.forward(10)" />
-      <Header title = "i kod?" />
-      <View style={styles.littleblueContainer}></View>
+      <Flashcard
+        frontside_block={{ frontside_block }}
+        translation={{ translation }}
+      />
+      <Header title="i kod?" />
+      <View style={styles.blueContainer}></View>
     </View>
   );
 };
