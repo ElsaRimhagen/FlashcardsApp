@@ -23,7 +23,7 @@ const MotionMenu = () => {
             source={BlockData.move10.source}
             onPress={() => {
               navigation.navigate("FlashcardView", {
-                frontside_block: BlockData.move10.source ,
+                frontside_block: BlockData.move10.source,
                 translation: BlockData.move10.translation,
               });
             }}
@@ -49,7 +49,10 @@ const MotionMenu = () => {
           <ClickableBlock
             source={BlockData.go_to_random.source}
             onPress={() => {
-              navigation.navigate("FlashcardView");
+              navigation.navigate("FlashcardView", {
+                frontside_block: BlockData.go_to_random.source,
+                translation: BlockData.go_to_random.translation,
+              });
             }}
           />
           <ClickableBlock source={BlockData.go_to_x_y.source} />

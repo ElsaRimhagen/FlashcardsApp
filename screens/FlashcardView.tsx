@@ -6,12 +6,16 @@ import styles from "../styles";
 import GoingBack from "../components/GoingBack";
 import Flashcard from "../components/Flashcard";
 
-const FlashcardView = ({ route }) => {
+interface Props {
+  route: any;
+}
+
+const FlashcardView = ({ route }: Props) => {
   let data = route.params;
   return (
     <View style={styles.containerCenter}>
       <GoingBack />
-      <Header title= "Vad blir" />
+      <Header title="Vad blir" />
       <Flashcard
         frontside_block={data.frontside_block}
         translation={data.translation}
