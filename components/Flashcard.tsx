@@ -4,13 +4,12 @@ import { Text, View, TouchableOpacity, Animated, Image } from "react-native";
 
 import styles from "../styles";
 
-
 interface Props {
   frontside_block: any;
   translation: any;
 }
 
-const Flashcard: React.FC<Props> = ({ frontside_block, translation }) => {
+const Flashcard = ({ frontside_block, translation }: Props) => {
   let animatedValue = new Animated.Value(0);
   let currentValue = 0;
 
