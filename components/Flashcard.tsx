@@ -3,46 +3,45 @@ import { Text, View, TouchableOpacity, Animated, Image } from "react-native";
 
 import styles from "../styles";
 
-let animatedValue = new Animated.Value(0);
-let currentValue = 0;
-
-animatedValue.addListener(({ value }) => {
-  currentValue = value;
-});
-
-const FlipcardAnimation = () => {
-  if (currentValue >= 90) {
-    Animated.spring(animatedValue, {
-      toValue: 0,
-      friction: 8,
-      tension: 10,
-      useNativeDriver: false,
-    }).start();
-  } else {
-    Animated.spring(animatedValue, {
-      toValue: 180,
-      friction: 8,
-      tension: 10,
-      useNativeDriver: false,
-    }).start();
-  }
-};
-
-const frontInterpolate = animatedValue.interpolate({
-  inputRange: [0, 180],
-  outputRange: ["0deg", "180deg"],
-});
-const backInterpolate = animatedValue.interpolate({
-  inputRange: [0, 180],
-  outputRange: ["180deg", "360deg"],
-});
-
 interface Props {
   frontside_block: any;
   translation: any;
 }
 
 const Flashcard: React.FC<Props> = ({ frontside_block, translation }) => {
+  let animatedValue = new Animated.Value(0);
+  let currentValue = 0;
+
+  animatedValue.addListener(({ value }) => {
+    currentValue = value;
+  });
+
+  const FlipcardAnimation = () => {
+    if (currentValue >= 90) {
+      Animated.spring(animatedValue, {
+        toValue: 0,
+        friction: 8,
+        tension: 10,
+        useNativeDriver: false,
+      }).start();
+    } else {
+      Animated.spring(animatedValue, {
+        toValue: 180,
+        friction: 8,
+        tension: 10,
+        useNativeDriver: false,
+      }).start();
+    }
+  };
+
+  const frontInterpolate = animatedValue.interpolate({
+    inputRange: [0, 180],
+    outputRange: ["0deg", "180deg"],
+  });
+  const backInterpolate = animatedValue.interpolate({
+    inputRange: [0, 180],
+    outputRange: ["180deg", "360deg"],
+  });
   return (
     <View style={styles.flashcardContainer}>
       <TouchableOpacity style={styles.center} onPress={FlipcardAnimation}>
