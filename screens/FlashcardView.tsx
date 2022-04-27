@@ -21,7 +21,7 @@ const FlashcardView = ({ route }: Props) => {
         translation={data.translation}
       />
       <Header title="i kod?" />
-      <View style={styles.blueContainer}></View>
+      <View style={{ flex:1 }}></View>
     </View>
   );
 };

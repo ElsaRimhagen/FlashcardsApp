@@ -6,24 +6,14 @@ import { useNavigation } from "@react-navigation/core";
 import styles from "../styles";
 import { StackParams } from "../App";
 
-interface Props {
-  onPress?: () => void;
-}
-
-
-
-const GoingBack: React.FC<Props> = ({ onPress }) => {
+const GoingBack = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
   
-  const functioncombined = () => {
-    navigation.goBack();
-    let currentValue = 0;
-  }
   return (
     <View style={styles.blueContainer}>
       <TouchableOpacity
         style={styles.GoBackTouchableOpacity}
-        onPress={functioncombined}
+        onPress={ () => navigation.goBack()}
       >
         <Image
           style={styles.GoBackStyle}
