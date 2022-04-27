@@ -27,7 +27,7 @@ const SubMenu = ({ route }: Props) => {
       <Header title={data.title} />
       <TextParagraph
         text_row1="kontrollerar din"
-        text_row2="Sprites rörelser"
+        text_row2= {data.explanation}
       />
       <ScrollContainer />
     </View>

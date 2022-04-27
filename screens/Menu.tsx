@@ -22,7 +22,7 @@ const Menu = () => {
           category="Rörelse"
           onPress={() => {
             navigation.navigate("SubMenu",
-            {title: "Rörelse"});
+            {title: "Rörelse", explanation: "Sprites rörelser"});
           }}
         />
         <CategoryLogo
