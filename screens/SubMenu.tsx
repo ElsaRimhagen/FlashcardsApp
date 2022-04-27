@@ -61,7 +61,14 @@ const SubMenu = ({ route }: Props) => {
               });
             }}
           />
-          <ClickableBlock source={BlockData.go_to_x_y.source} />
+          <ClickableBlock 
+            source={BlockData.go_to_x_y.source}
+            onPress={() => {
+              navigation.navigate("FlashcardView", {
+                frontside_block: BlockData.go_to_x_y.source,
+                translation: BlockData.go_to_x_y.translation,
+              });
+            }}/>
 
           <ClickableBlock
             source={require("../assets/blocks/glide_secs_random.png")}

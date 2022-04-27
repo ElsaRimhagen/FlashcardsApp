@@ -5,22 +5,22 @@ export const move10 = {
 
 export const turn_left_15deg = {
   source: require("./turn_right_15deg.png"),
-  translation: "rotate.(15)",
+  translation: "sprite.right(15)",
 };
 
 export const turn_right_15deg = {
   source: require("./turn_left_15deg.png"),
-  translation: "rotate.(15)",
+  translation: "sprite.left(15)",
 };
 
 export const go_to_random = {
   source: require("./go_to_random.png"),
-  translation: "goto(rand_x, rand_y)",
+  translation: "sprite.goto('random')",
 };
 
 export const go_to_x_y = {
   source: require("./go_to_x_y.png"),
-  translation: "goto(x, y)",
+  translation: "sprite.goto(0, 0)",
 };
 
 // "../assets/blocks/glide_x_y.png"
