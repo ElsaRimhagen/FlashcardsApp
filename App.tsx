@@ -7,14 +7,14 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import FlashcardsView from "./screens/FlashcardView";
 import Menu from "./screens/Menu";
-import MotionMenu from "./screens/MotionMenu";
+import SubMenu from "./screens/SubMenu";
 import StartingScreen from "./screens/StartingScreen";
 
 export type StackParams = {
   Menu: any;
   StartingScreen: any;
   FlashcardView: any;
-  MotionMenu: any;
+  SubMenu: any;
 };
 
 const Stack = createNativeStackNavigator<StackParams>();
@@ -42,7 +42,7 @@ const App = () => {
         <Stack.Screen name="StartingScreen" component={StartingScreen} />
         <Stack.Screen name="FlashcardView" component={FlashcardsView} />
         <Stack.Screen name="Menu" component={Menu} />
-        <Stack.Screen name="MotionMenu" component={MotionMenu} />
+        <Stack.Screen name="SubMenu" component={SubMenu} />
       </Stack.Navigator>
     </NavigationContainer>
   );
