@@ -1,7 +1,10 @@
+import { number } from "prop-types";
 import React from "react";
 import { Text, View, TouchableOpacity, Animated, Image } from "react-native";
 
 import styles from "../styles";
+
+
 
 let animatedValue = new Animated.Value(0);
 let currentValue = 0;
@@ -11,6 +14,7 @@ animatedValue.addListener(({ value }) => {
 });
 
 const FlipcardAnimation = () => {
+  
   if (currentValue >= 90) {
     Animated.spring(animatedValue, {
       toValue: 0,

@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   bigBlockStyle: {
-    height: 100,
+    height: 80,
     resizeMode: "contain",
     padding: 10,
     margin: 10,

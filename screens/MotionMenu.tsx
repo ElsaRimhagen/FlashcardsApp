@@ -14,6 +14,7 @@ import * as BlockData from "../assets/blocks/BlockData";
 
 const MotionMenu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
+  
 
   const ScrollContainer = () => {
     return (

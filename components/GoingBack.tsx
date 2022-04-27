@@ -10,14 +10,20 @@ interface Props {
   onPress?: () => void;
 }
 
+
+
 const GoingBack: React.FC<Props> = ({ onPress }) => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
-
+  
+  const functioncombined = () => {
+    navigation.goBack();
+    let currentValue = 0;
+  }
   return (
     <View style={styles.blueContainer}>
       <TouchableOpacity
         style={styles.GoBackTouchableOpacity}
-        onPress={() => navigation.goBack()}
+        onPress={functioncombined}
       >
         <Image
           style={styles.GoBackStyle}
