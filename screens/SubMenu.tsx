@@ -12,7 +12,12 @@ import TextParagraph from "../components/TextParagraph";
 import { StackParams } from "../App";
 import * as BlockData from "../assets/blocks/BlockData";
 
-const MotionMenu = () => {
+interface Props {
+  route: any;
+}
+
+const SubMenu = ({ route }: Props) => {
+  let data = route.params;
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
   
 
@@ -84,7 +89,7 @@ const MotionMenu = () => {
   return (
     <View style={styles.containerCenter}>
       <GoingBack />
-      <Header title="Rörelse" />
+      <Header title={data.title} />
       <TextParagraph
         text_row1="kontrollerar din"
         text_row2="Sprites rörelser"
@@ -94,4 +99,4 @@ const MotionMenu = () => {
   );
 };
 
-export default MotionMenu;
+export default SubMenu;

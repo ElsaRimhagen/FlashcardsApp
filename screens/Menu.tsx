@@ -21,7 +21,8 @@ const Menu = () => {
           source={require("../assets/categories/motion.png")}
           category="Rörelse"
           onPress={() => {
-            navigation.navigate("MotionMenu");
+            navigation.navigate("SubMenu",
+            {title: "Rörelse"});
           }}
         />
         <CategoryLogo
