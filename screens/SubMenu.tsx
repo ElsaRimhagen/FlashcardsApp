@@ -4,14 +4,12 @@ import { View } from "react-native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
 
-
 import GoingBack from "../components/GoingBack";
 import Header from "../components/Header";
 import styles from "../styles";
 import TextParagraph from "../components/TextParagraph";
 import { StackParams } from "../App";
 import { ScrollContainer } from "../components/ScrollContainer";
-
 
 interface Props {
   route: any;
@@ -27,7 +25,7 @@ const SubMenu = ({ route }: Props) => {
       <Header title={data.title} />
       <TextParagraph
         text_row1="kontrollerar din"
-        text_row2= {data.explanation}
+        text_row2={data.explanation}
       />
       <ScrollContainer />
     </View>
