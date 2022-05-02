@@ -1,4 +1,3 @@
-import { number } from "prop-types";
 import React from "react";
 import { Text, View, TouchableOpacity, Animated, Image } from "react-native";
 
