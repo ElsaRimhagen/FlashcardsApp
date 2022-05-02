@@ -1,27 +1,34 @@
-export const move10 = {
-  source: require("./move_10.png"),
-  translation: "sprite.forward(10)",
-};
+export const Blocks = [
+  {
+    id: 1,
+    source: require("./move_10.png"),
+    translation: "sprite.forward(10)",
+  },
 
-export const turn_left_15deg = {
-  source: require("./turn_right_15deg.png"),
-  translation: "sprite.right(15)",
-};
+  {
+    id: 2,
+    source: require("./turn_right_15deg.png"),
+    translation: "sprite.right(15)",
+  },
 
-export const turn_right_15deg = {
-  source: require("./turn_left_15deg.png"),
-  translation: "sprite.left(15)",
-};
+  {
+    id: 3,
+    source: require("./turn_left_15deg.png"),
+    translation: "sprite.left(15)",
+  },
 
-export const go_to_random = {
-  source: require("./go_to_random.png"),
-  translation: "sprite.goto('random')",
-};
+  {
+    id: 4,
+    source: require("./go_to_random.png"),
+    translation: "sprite.goto('random')",
+  },
 
-export const go_to_x_y = {
-  source: require("./go_to_x_y.png"),
-  translation: "sprite.goto(0, 0)",
-};
+  {
+    id: 5,
+    source: require("./go_to_x_y.png"),
+    translation: "sprite.goto(0, 0)",
+  },
+];
 
 // "../assets/blocks/glide_x_y.png"
 
