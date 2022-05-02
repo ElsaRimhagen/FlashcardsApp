@@ -1,5 +1,5 @@
 import React from "react";
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, FlatList } from "react-native";
 
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
@@ -12,24 +12,23 @@ import { Blocks } from "../assets/blocks/BlockData";
 export const ScrollContainer = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
-  return (
-    <View style={styles.scrollContainer}>
-      <ScrollView>
-        {Blocks.map((block) => {
-          return (
-            <ClickableBlock
-              source={block.source}
+  const renderClickableBlock = ({ item }: { item: any; }) => {
+    return (
+      <ClickableBlock
+              source = {item.source}
               onPress={() => {
                 navigation.navigate("FlashcardView", {
-                  frontside_block: block.source,
-                  translation: block.translation,
+                  frontside_block: item.source,
+                  translation: item.translation,
                 });
               }}
             />
-          );
-        })}
-        ;
-      </ScrollView>
+    )
+  };
+
+  return (
+    <View style={styles.scrollContainer}>
+      <FlatList data = {Blocks} renderItem = {renderClickableBlock} />
     </View>
   );
 };
