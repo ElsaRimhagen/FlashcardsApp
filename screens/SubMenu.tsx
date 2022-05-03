@@ -27,7 +27,7 @@ const SubMenu = ({ route }: Props) => {
         text_row1="kontrollerar din"
         text_row2={data.explanation}
       />
-      <ScrollContainer />
+      <ScrollContainer chosenCategory={data.title} />
     </View>
   );
 };

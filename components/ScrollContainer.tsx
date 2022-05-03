@@ -10,17 +10,13 @@ import { StackParams } from "../App";
 import { Blocks } from "../assets/blocks/BlockData";
 
 interface Props {
-  chosenCategroy: string;
+  chosenCategory: string;
 }
 
-export const ScrollContainer = ( {chosenCategroy} : Props ) => {
+export const ScrollContainer = ({ chosenCategory }: Props) => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
-  
-  const data = {Blocks}
 
-  let filteredData = data.filter( function (item) {
-    return item.category.includes(chosenCategroy) 
-  })
+  let filtereddata = Blocks.filter((block) => block.category == chosenCategory);
 
   const renderClickableBlock = ({ item }: { item: any }) => {
     return (
@@ -38,9 +34,7 @@ export const ScrollContainer = ( {chosenCategroy} : Props ) => {
 
   return (
     <View style={styles.scrollContainer}>
-      <FlatList 
-      data = {filteredData} 
-      renderItem={renderClickableBlock} />
+      <FlatList data={filtereddata} renderItem={renderClickableBlock} />
     </View>
   );
 };
