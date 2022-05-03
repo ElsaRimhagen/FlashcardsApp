@@ -6,13 +6,13 @@ interface Props {
   title: string;
 }
 
-const Header: React.FC<Props> = ({ title }) => {
+const Header = ({ title }: Props) => {
   return (
     <View style={styles.headerStyle}>
-      <Text 
-      numberOfLines = {1}
-      adjustsFontSizeToFit 
-      style={styles.titleStyle}> {title} </Text>
+      <Text numberOfLines={1} adjustsFontSizeToFit style={styles.titleStyle}>
+        {" "}
+        {title}{" "}
+      </Text>
     </View>
   );
 };

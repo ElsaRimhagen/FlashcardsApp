@@ -7,7 +7,7 @@ interface Props {
   onPress?: () => void;
 }
 
-const ClickableBlock: React.FC<Props> = ({ source, onPress }) => {
+const ClickableBlock = ({ source, onPress }: Props) => {
   return (
     <TouchableOpacity style={styles.center} onPress={onPress}>
       <Image style={styles.blockStyle} source={source} />

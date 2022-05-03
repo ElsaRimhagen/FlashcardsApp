@@ -83,9 +83,9 @@ const styles = StyleSheet.create({
     height: "15%",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 15
+    marginTop: 15,
   },
-  bottomText:{
+  bottomText: {
     marginTop: -25,
     marginBottom: 15,
   },
