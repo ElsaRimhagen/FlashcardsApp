@@ -30,7 +30,7 @@ export const BlockData = [
   },
   {
     source: require("./motion/glide_x_y.png"),
-    translation: "sprite.glide(0,0,1)", 
+    translation: "sprite.glide(0,0,1)",
     category: "Rörelse",
   },
   {
@@ -64,4 +64,29 @@ export const BlockData = [
     category: "Rörelse",
   },
 
+  {
+    source: require("./looks/sayhello2sec.png"),
+    translation: "sprite.say('Hello!', 2)",
+    category: "Utseende",
+  },
+  {
+    source: require("./looks/sayhello.png"),
+    translation: "sprite.say('Hello!')",
+    category: "Utseende",
+  },
+  {
+    source: require("./looks/thinkhmm2sec.png"),
+    translation: "sprite.think('Hmm', 2)",
+    category: "Utseende",
+  },
+  {
+    source: require("./looks/switchcostumetocostume2.png"),
+    translation: "sprite.set_costume('costume2')",
+    category: "Utseende",
+  },
+  {
+    source: require("./looks/nextcostume.png"),
+    translation: "sprite.next_costume()",
+    category: "Utseende",
+  },
 ];
