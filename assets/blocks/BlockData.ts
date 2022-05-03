@@ -33,6 +33,12 @@ export const Blocks = [
     translation: "sprite.goto(0, 0)",
     category: "Rörelse",
   },
+  {
+    id: 6,
+    source: require("./go_to_x_y.png"),
+    translation: "test",
+    category: "Utseende",
+  },
 ];
 
 // "../assets/blocks/glide_x_y.png"

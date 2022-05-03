@@ -21,15 +21,21 @@ const Menu = () => {
           source={require("../assets/categories/motion.png")}
           category="Rörelse"
           onPress={() => {
-            navigation.navigate("SubMenu",
-            {title: "Rörelse", 
-            explanation: "Sprites rörelser"});
+            navigation.navigate("SubMenu", {
+              title: "Rörelse",
+              explanation: "Sprites rörelser",
+            });
           }}
         />
         <CategoryLogo
           source={require("../assets/categories/looks.png")}
           category="Utseende"
-          onPress={handlePress}
+          onPress={() => {
+            navigation.navigate("SubMenu", {
+              title: "Utseende",
+              explanation: "Sprites utseende",
+            });
+          }}
         />
         <CategoryLogo
           source={require("../assets/categories/sound.png")}
