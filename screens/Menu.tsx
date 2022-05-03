@@ -40,32 +40,62 @@ const Menu = () => {
         <CategoryLogo
           source={require("../assets/categories/sound.png")}
           category="Ljud"
-          onPress={handlePress}
+          onPress={() => {
+            navigation.navigate("SubMenu", {
+              title: "Ljud",
+              explanation: "Sprites utseende",
+            });
+          }}
         />
         <CategoryLogo
           source={require("../assets/categories/events.png")}
           category="Händelser"
-          onPress={handlePress}
+          onPress={() => {
+            navigation.navigate("SubMenu", {
+              title: "Händelser",
+              explanation: "Sprites utseende",
+            });
+          }}
         />
         <CategoryLogo
           source={require("../assets/categories/controll.png")}
           category="Kontroll"
-          onPress={handlePress}
+          onPress={() => {
+            navigation.navigate("SubMenu", {
+              title: "Kontroll",
+              explanation: "Sprites utseende",
+            });
+          }}
         />
         <CategoryLogo
           source={require("../assets/categories/feel.png")}
           category="Känna av"
-          onPress={handlePress}
+          onPress={() => {
+            navigation.navigate("SubMenu", {
+              title: "Känna av",
+              explanation: "Sprites utseende",
+            });
+          }}
         />
         <CategoryLogo
           source={require("../assets/categories/operations.png")}
           category="Operatorer"
-          onPress={handlePress}
+          onPress={() => {
+            navigation.navigate("SubMenu", {
+              title: "Operatorer",
+              explanation: "Sprites utseende",
+            });
+          }}
         />
         <CategoryLogo
           source={require("../assets/categories/variables.png")}
           category="Variabler"
-          onPress={handlePress}
+          onPress={() => {
+            navigation.navigate("SubMenu", {
+              title: "Variabler",
+              explanation: "Sprites utseende",
+            });
+          }}
         />
       </View>
     );
