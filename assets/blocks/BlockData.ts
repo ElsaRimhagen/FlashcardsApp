@@ -29,22 +29,39 @@ export const BlockData = [
     category: "Rörelse",
   },
   {
-    source: require("./motion/go_to_x_y.png"),
-    translation: "test",
-    category: "Utseende",
+    source: require("./motion/glide_x_y.png"),
+    translation: "sprite.glide(0,0,1)", 
+    category: "Rörelse",
   },
+  {
+    source: require("./motion/point_direction_90.png"),
+    translation: "sprite.direction = 90",
+    category: "Rörelse",
+  },
+  {
+    source: require("./motion/point_mouse_pointer.png"),
+    translation: "sprite.towards('mouse')",
+    category: "Rörelse",
+  },
+  {
+    source: require("./motion/change_x_10.png"),
+    translation: "sprite.x = sprite.x + 10",
+    category: "Rörelse",
+  },
+  {
+    source: require("./motion/set_x_0.png"),
+    translation: "sprite.x = 0",
+    category: "Rörelse",
+  },
+  {
+    source: require("./motion/change_y_10.png"),
+    translation: "sprite.y = sprite.y + 10",
+    category: "Rörelse",
+  },
+  {
+    source: require("./motion/set_y_0.png"),
+    translation: "sprite.y = 0",
+    category: "Rörelse",
+  },
+
 ];
-
-// "../assets/blocks/glide_x_y.png"
-
-// "../assets/blocks/point_direction_90.png"
-
-// "../assets/blocks/point_mouse_pointer.png"
-
-// "../assets/blocks/change_x_10.png"
-
-// "../assets/blocks/set_x_0.png"
-
-// "../assets/blocks/change_y_10.png"
-
-// "../assets/blocks/set_y_0.png"

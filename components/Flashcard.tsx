@@ -63,7 +63,10 @@ const Flashcard = ({ frontside_block, translation }: Props) => {
             ]}
           >
             <View style={styles.translationContainerStyle}>
-              <Text style={styles.translationStyle}> {translation} </Text>
+              <Text 
+              adjustsFontSizeToFit
+              numberOfLines={1}
+              style={styles.translationStyle}> {translation} </Text>
             </View>
           </Animated.View>
         </View>
