@@ -3,30 +3,35 @@ export const Blocks = [
     id: 1,
     source: require("./move_10.png"),
     translation: "sprite.forward(10)",
+    category: 'motion'
   },
 
   {
     id: 2,
     source: require("./turn_right_15deg.png"),
     translation: "sprite.right(15)",
+    category: 'motion'
   },
 
   {
     id: 3,
     source: require("./turn_left_15deg.png"),
     translation: "sprite.left(15)",
+    category: 'motion'
   },
 
   {
     id: 4,
     source: require("./go_to_random.png"),
     translation: "sprite.goto('random')",
+    category: 'motion'
   },
 
   {
     id: 5,
     source: require("./go_to_x_y.png"),
     translation: "sprite.goto(0, 0)",
+    category: 'motion'
   },
 ];
 
