@@ -24,8 +24,8 @@ const SubMenu = ({ route }: Props) => {
       <GoingBack />
       <Header title={data.title} />
       <TextParagraph
-        text_row1="kontrollerar din"
-        text_row2={data.explanation}
+        text_row1= {data.text_row1}
+        text_row2={data.text_row2}
       />
       <ScrollContainer chosenCategory={data.title} />
     </View>

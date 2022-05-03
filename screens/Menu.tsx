@@ -23,7 +23,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Rörelse",
-              explanation: "Sprites rörelser",
+              text_row1: "kontrollerar din",
+              text_row2: "Sprites rörelser"
             });
           }}
         />
@@ -33,7 +34,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Utseende",
-              explanation: "Sprites utseende",
+              text_row1: "kontrollerar din",
+              text_row2: "Sprites utseende"
             });
           }}
         />
@@ -43,7 +45,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Ljud",
-              explanation: "Sprites utseende",
+              text_row1: "sätter ljud",
+              text_row2: "till ditt spel"
             });
           }}
         />
@@ -53,7 +56,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Händelser",
-              explanation: "Sprites utseende",
+              text_row1: "kontrollerar händelser",
+              text_row2: "i ditt spel"
             });
           }}
         />
@@ -63,7 +67,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Kontroll",
-              explanation: "Sprites utseende",
+              text_row1: "kontrollerar hur och ",
+              text_row2: "när för din Sprite"
             });
           }}
         />
@@ -73,7 +78,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Känna av",
-              explanation: "Sprites utseende",
+              text_row1: "kontrollerar situationer",
+              text_row2: "när Spriten möter annat"
             });
           }}
         />
@@ -83,7 +89,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Operatorer",
-              explanation: "Sprites utseende",
+              text_row1: "kontrollerar beräkningar",
+              text_row2: "och logik"
             });
           }}
         />
@@ -93,7 +100,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Variabler",
-              explanation: "Sprites utseende",
+              text_row1: "kontrollerar varibaler",
+              text_row2: "i ditt spel"
             });
           }}
         />

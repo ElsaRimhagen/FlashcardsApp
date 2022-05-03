@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontFamily: "American-Typewriter",
     fontSize: 30,
+    textAlign: 'center'
   },
   titleStyle: {
     color: colors.headers,
