@@ -1,35 +1,35 @@
-export const Blocks = [
+export const BlockData = [
   {
-    source: require("./move_10.png"),
+    source: require("./motion/move_10.png"),
     translation: "sprite.forward(10)",
     category: "Rörelse",
   },
 
   {
-    source: require("./turn_right_15deg.png"),
+    source: require("./motion/turn_right_15deg.png"),
     translation: "sprite.right(15)",
     category: "Rörelse",
   },
 
   {
-    source: require("./turn_left_15deg.png"),
+    source: require("./motion/turn_left_15deg.png"),
     translation: "sprite.left(15)",
     category: "Rörelse",
   },
 
   {
-    source: require("./go_to_random.png"),
+    source: require("./motion/go_to_random.png"),
     translation: "sprite.goto('random')",
     category: "Rörelse",
   },
 
   {
-    source: require("./go_to_x_y.png"),
+    source: require("./motion/go_to_x_y.png"),
     translation: "sprite.goto(0, 0)",
     category: "Rörelse",
   },
   {
-    source: require("./go_to_x_y.png"),
+    source: require("./motion/go_to_x_y.png"),
     translation: "test",
     category: "Utseende",
   },

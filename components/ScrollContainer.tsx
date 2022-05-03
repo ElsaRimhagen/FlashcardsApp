@@ -4,10 +4,10 @@ import { View, FlatList } from "react-native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
 
-import ClickableBlock from "../components/ClickableBlock";
+import ClickableBlock from "./ClickableBlock";
 import styles from "../styles";
 import { StackParams } from "../App";
-import { Blocks } from "../assets/blocks/BlockData";
+import { BlockData } from "../assets/blocks/BlockData";
 
 interface Props {
   chosenCategory: string;
@@ -16,7 +16,7 @@ interface Props {
 export const ScrollContainer = ({ chosenCategory }: Props) => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
-  let filtereddata = Blocks.filter((block) => block.category == chosenCategory);
+  let filtereddata = BlockData.filter((block) => block.category == chosenCategory);
 
   const renderClickableBlock = ({ item }: { item: any }) => {
     return (
@@ -34,7 +34,10 @@ export const ScrollContainer = ({ chosenCategory }: Props) => {
 
   return (
     <View style={styles.scrollContainer}>
-      <FlatList data={filtereddata} renderItem={renderClickableBlock} />
+      <FlatList 
+      data={filtereddata} 
+      renderItem={renderClickableBlock}
+      keyExtractor={item => item.source} />
     </View>
   );
 };
