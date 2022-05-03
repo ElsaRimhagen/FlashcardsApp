@@ -89,4 +89,29 @@ export const BlockData = [
     translation: "sprite.next_costume()",
     category: "Utseende",
   },
+  {
+    source: require("./sound/play_meow_done.png"),
+    translation: "sprite.play_until_done('Meow')",
+    category: "Ljud",
+  },
+  {
+    source: require("./sound/start_meow.png"),
+    translation: "sprite.play('Meow')",
+    category: "Ljud",
+  },
+  {
+    source: require("./sound/stop_all_sounds.png"),
+    translation: "sprite.stop_sound()",
+    category: "Ljud",
+  },
+  {
+    source: require("./sound/change_pitch_by_10.png"),
+    translation: "sprite.set_soundeffect('PITCH', 10)",
+    category: "Ljud",
+  },
+  {
+    source: require("./sound/play_meow_done.png"),
+    translation: "sprite.change_soundeffect('PITCH', 10)",
+    category: "Ljud",
+  },
 ];
