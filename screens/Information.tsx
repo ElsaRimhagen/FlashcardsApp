@@ -12,21 +12,24 @@ const Information = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
   return (
-    <TouchableOpacity
-      style={styles.container}
-      onPress={() => navigation.replace("Menu")}
-    >
-      <View style={styles.container}>
-        <Header title="Kom ihåg!"></Header>
-        <Text style={styles.textStyle}>
-          Fortfarande ordbajs! Fritt fram att ändra! Alla objekt och metoder som
-          används i översättningarna kräver mer kod än vad som visas i
-          översättningen, men med denna app får du exempel på hur man får
-          egenskapade föremål att bete sig som man vill med sen innan skapade
-          funktioner!
-        </Text>
-      </View>
-    </TouchableOpacity>
+    <View style={styles.container}>
+      <Header title="Kom ihåg!"></Header>
+        <View style = {styles.blueContainer}></View>
+          <TouchableOpacity
+            style={styles.container}
+            onPress={() => navigation.replace("Menu")}>
+            <Text style={styles.textStyle}>
+              Alla objekt och metoder som
+              används i översättningarna kräver mer kod än vad som visas i
+              översättningen. Denna app visar exempel på hur blocken skulle 
+              kunna skrivas i kod tillsammans med de färdiga metoderna.
+            </Text>
+          </TouchableOpacity>
+          <Text style= {styles.constructorTextStyle}>Ha så kul!</Text>
+        <View style = {styles.blueContainer}></View>
+        <View style = {styles.blueContainer}></View>
+    </View>
+    
   );
 };
 
