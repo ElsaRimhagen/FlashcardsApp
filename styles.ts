@@ -97,7 +97,6 @@ const styles = StyleSheet.create({
     fontFamily: "American-Typewriter",
     fontSize: 40,
     textAlign: 'center',
-    fontWeight: 'bold'
   },
   titleStyle: {
     color: colors.headers,
