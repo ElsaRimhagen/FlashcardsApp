@@ -1,15 +1,10 @@
 import React from "react";
 import { View, Text, Animated, Easing } from "react-native";
 
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { useNavigation } from "@react-navigation/core";
-
 import styles from "../styles";
-import { StackParams } from "../App";
 
 
 const UnderConstruction = () => {
-    const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
     let rotateValueHolder = new Animated.Value(0);
     rotateValueHolder.setValue(0);
