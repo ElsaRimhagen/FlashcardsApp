@@ -16,7 +16,9 @@ interface Props {
 export const ScrollContainer = ({ chosenCategory }: Props) => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
-  let filtereddata = BlockData.filter((block) => block.category == chosenCategory);
+  let filtereddata = BlockData.filter(
+    (block) => block.category == chosenCategory
+  );
 
   const renderClickableBlock = ({ item }: { item: any }) => {
     return (
@@ -34,10 +36,11 @@ export const ScrollContainer = ({ chosenCategory }: Props) => {
 
   return (
     <View style={styles.scrollContainer}>
-      <FlatList 
-      data={filtereddata} 
-      renderItem={renderClickableBlock}
-      keyExtractor={item => item.source} />
+      <FlatList
+        data={filtereddata}
+        renderItem={renderClickableBlock}
+        keyExtractor={(item, index) => String(index)}
+      />
     </View>
   );
 };
