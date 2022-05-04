@@ -24,7 +24,7 @@ const Menu = () => {
             navigation.navigate("SubMenu", {
               title: "Rörelse",
               text_row1: "kontrollerar din",
-              text_row2: "Sprites rörelser"
+              text_row2: "Sprites rörelser",
             });
           }}
         />
@@ -35,7 +35,7 @@ const Menu = () => {
             navigation.navigate("SubMenu", {
               title: "Utseende",
               text_row1: "kontrollerar din",
-              text_row2: "Sprites utseende"
+              text_row2: "Sprites utseende",
             });
           }}
         />
@@ -46,7 +46,7 @@ const Menu = () => {
             navigation.navigate("SubMenu", {
               title: "Ljud",
               text_row1: "sätter ljud",
-              text_row2: "till ditt spel"
+              text_row2: "till ditt spel",
             });
           }}
         />
@@ -57,7 +57,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Händelser",
               text_row1: "kontrollerar händelser",
-              text_row2: "i ditt spel"
+              text_row2: "i ditt spel",
             });
           }}
         />
@@ -68,7 +68,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Kontroll",
               text_row1: "kontrollerar hur och ",
-              text_row2: "när för din Sprite"
+              text_row2: "när för din Sprite",
             });
           }}
         />
@@ -79,7 +79,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Känna av",
               text_row1: "kontrollerar situationer",
-              text_row2: "när Spriten möter annat"
+              text_row2: "när Spriten möter annat",
             });
           }}
         />
@@ -90,7 +90,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Operatorer",
               text_row1: "kontrollerar beräkningar",
-              text_row2: "och logik"
+              text_row2: "och logik",
             });
           }}
         />
@@ -101,7 +101,7 @@ const Menu = () => {
             navigation.navigate("SubMenu", {
               title: "Variabler",
               text_row1: "kontrollerar varibaler",
-              text_row2: "i ditt spel"
+              text_row2: "i ditt spel",
             });
           }}
         />
