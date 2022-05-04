@@ -110,8 +110,23 @@ export const BlockData = [
     category: "Ljud",
   },
   {
-    source: require("./sound/play_meow_done.png"),
-    translation: "sprite.change_soundeffect('PITCH', 10)",
-    category: "Ljud",
+    source: require("./variables/set_variable_0.png"),
+    translation: "sprite.set_variable('my variable', 0)",
+    category: "Variabler",
+  },
+  {
+    source: require("./variables/change_variable_1.png"),
+    translation: "sprite.change_variable('my variable', 1)",
+    category: "Variabler",
+  },
+  {
+    source: require("./variables/show_variable.png"),
+    translation: "sprite.show_variable('my variable')",
+    category: "Variabler",
+  },
+  {
+    source: require("./variables/hide_variable.png"),
+    translation: "sprite.hide_variable('my variable')",
+    category: "Variabler",
   },
 ];
