@@ -13,7 +13,6 @@ const Menu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
   const Boxes = () => {
-    const handlePress = () => Alert.alert("Kommer i framtida uppdateringar");
 
     return (
       <View style={styles.boxContainer}>

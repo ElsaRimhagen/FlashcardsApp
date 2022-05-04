@@ -42,6 +42,7 @@ const Flashcard = ({ frontside_block, translation }: Props) => {
     inputRange: [0, 180],
     outputRange: ["180deg", "360deg"],
   });
+
   return (
     <View style={styles.flashcardContainer}>
       <TouchableOpacity style={styles.center} onPress={FlipcardAnimation}>
@@ -50,8 +51,7 @@ const Flashcard = ({ frontside_block, translation }: Props) => {
             style={[
               styles.flashcardStyle,
               { transform: [{ rotateY: frontInterpolate }] },
-            ]}
-          >
+            ]}>
             <Image style={styles.bigBlockStyle} source={frontside_block} />
           </Animated.View>
 
@@ -60,8 +60,7 @@ const Flashcard = ({ frontside_block, translation }: Props) => {
               styles.flashcardStyle,
               styles.flashcardBacksideStyle,
               { transform: [{ rotateY: backInterpolate }] },
-            ]}
-          >
+            ]}>
             <View style={styles.translationContainerStyle}>
               <Text 
               adjustsFontSizeToFit

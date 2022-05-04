@@ -39,7 +39,7 @@ export const ScrollContainer = ({ chosenCategory }: Props) => {
       <FlatList
         data={filtereddata}
         renderItem={renderClickableBlock}
-        keyExtractor={(item, index) => String(index)}
+        keyExtractor={(index) => String(index)}
       />
     </View>
   );

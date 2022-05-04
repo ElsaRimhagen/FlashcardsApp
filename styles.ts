@@ -60,9 +60,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   flashcardContainer: {
-    // width: "100%",
     height: "50%",
-    //flex: 1,
     backgroundColor: colors.background,
     padding: 5,
     flexDirection: "row",
@@ -105,13 +103,11 @@ const styles = StyleSheet.create({
     color: colors.headers,
     fontFamily: "American-Typewriter",
     fontSize: 80,
-    // padding: 30,
   },
   translationStyle: {
     color: colors.text,
     fontFamily: "American-Typewriter",
     fontSize: 25,
-    // fontWeight: "bold",
   },
 
   // Images & logotypes //
@@ -158,8 +154,6 @@ const styles = StyleSheet.create({
     position: "absolute",
     width: 60,
     height: 60,
-    // alignItems: "center",
-    // justifyContent: "center",
     left: 5,
     top: 15,
   },
