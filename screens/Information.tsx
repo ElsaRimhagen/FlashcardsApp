@@ -19,10 +19,11 @@ const Information = () => {
       <View style={styles.container}>
         <Header title="Kom ihåg!"></Header>
         <Text style={styles.textStyle}>
-          Alla objekt och metoder som används i översättningarna kräver mer kod
-          än vad som visas i översättningen, men med denna app får du exempel på
-          hur man får egenskapade föremål att bete sig som man vill med sen
-          innan skapade funktioner!
+          Fortfarande ordbajs! Fritt fram att ändra! Alla objekt och metoder som
+          används i översättningarna kräver mer kod än vad som visas i
+          översättningen, men med denna app får du exempel på hur man får
+          egenskapade föremål att bete sig som man vill med sen innan skapade
+          funktioner!
         </Text>
       </View>
     </TouchableOpacity>
