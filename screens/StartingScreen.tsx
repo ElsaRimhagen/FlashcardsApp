@@ -25,7 +25,7 @@ const StartingScreen = () => {
   });
 
   setTimeout(() => {
-    navigation.replace("Menu");
+    navigation.replace("Information");
   }, 1500);
 
   return (
