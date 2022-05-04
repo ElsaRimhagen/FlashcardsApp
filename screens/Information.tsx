@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  View,
-  Alert,
-  Touchable,
-  TouchableOpacity,
-  Text,
-  StyleSheet,
-} from "react-native";
+import { View, TouchableOpacity, Text } from "react-native";
 
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
@@ -37,7 +30,6 @@ const Information = () => {
         <Text style={styles.constructorTextStyle}>Ha så kul!</Text>
       </View>
       </TouchableOpacity>
-      {/* <View style = {styles.blueContainer}></View> */}
     </View>
   );
 };
