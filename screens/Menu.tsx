@@ -54,7 +54,7 @@ const Menu = () => {
           source={require("../assets/categories/events.png")}
           category="Händelser"
           onPress={() => {
-            navigation.navigate("SubMenu", {
+            navigation.navigate("SubMenu2", {
               title: "Händelser",
               text_row1: "kontrollerar händelser",
               text_row2: "i ditt spel"
@@ -65,7 +65,7 @@ const Menu = () => {
           source={require("../assets/categories/controll.png")}
           category="Kontroll"
           onPress={() => {
-            navigation.navigate("SubMenu", {
+            navigation.navigate("SubMenu2", {
               title: "Kontroll",
               text_row1: "kontrollerar hur och ",
               text_row2: "när för din Sprite"
@@ -76,7 +76,7 @@ const Menu = () => {
           source={require("../assets/categories/feel.png")}
           category="Känna av"
           onPress={() => {
-            navigation.navigate("SubMenu", {
+            navigation.navigate("SubMenu2", {
               title: "Känna av",
               text_row1: "kontrollerar situationer",
               text_row2: "när Spriten möter annat"
@@ -87,7 +87,7 @@ const Menu = () => {
           source={require("../assets/categories/operations.png")}
           category="Operatorer"
           onPress={() => {
-            navigation.navigate("SubMenu", {
+            navigation.navigate("SubMenu2", {
               title: "Operatorer",
               text_row1: "kontrollerar beräkningar",
               text_row2: "och logik"

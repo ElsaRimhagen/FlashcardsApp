@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
     color: colors.headers,
     fontFamily: "American-Typewriter",
     fontSize: 30,
-    // padding: 10,
   },
   headerStyle: {
     width: "100%",
@@ -94,6 +93,13 @@ const styles = StyleSheet.create({
     fontFamily: "American-Typewriter",
     fontSize: 30,
     textAlign: 'center'
+  },
+  constructorTextStyle: {
+    color: colors.headers,
+    fontFamily: "American-Typewriter",
+    fontSize: 40,
+    textAlign: 'center',
+    fontWeight: 'bold'
   },
   titleStyle: {
     color: colors.headers,
@@ -129,6 +135,14 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     resizeMode: "stretch",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  constructorCatStyle: {
+    height: 250,
+    resizeMode: "contain",
+    padding: 10,
+    margin: 10,
     alignItems: "center",
     justifyContent: "center",
   },

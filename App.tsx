@@ -9,12 +9,14 @@ import FlashcardsView from "./screens/FlashcardView";
 import Menu from "./screens/Menu";
 import SubMenu from "./screens/SubMenu";
 import StartingScreen from "./screens/StartingScreen";
+import SubMenu2 from "./screens/SubMenu2";
 
 export type StackParams = {
   Menu: any;
   StartingScreen: any;
   FlashcardView: any;
   SubMenu: any;
+  SubMenu2: any;
 };
 
 const Stack = createNativeStackNavigator<StackParams>();
@@ -43,6 +45,7 @@ const App = () => {
         <Stack.Screen name="FlashcardView" component={FlashcardsView} />
         <Stack.Screen name="Menu" component={Menu} />
         <Stack.Screen name="SubMenu" component={SubMenu} />
+        <Stack.Screen name="SubMenu2" component={SubMenu2} />
       </Stack.Navigator>
     </NavigationContainer>
   );
