@@ -1,5 +1,5 @@
 import React from "react";
-import { View, TouchableOpacity, Text } from "react-native";
+import { View, TouchableOpacity, Text, Image } from "react-native";
 
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
@@ -7,6 +7,8 @@ import { useNavigation } from "@react-navigation/core";
 import styles from "../styles";
 import Header from "../components/Header";
 import { StackParams } from "../App";
+import { colors } from "../assets/colors";
+import GoingForward from "../components/GoingForward";
 
 const Information = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
@@ -15,10 +17,8 @@ const Information = () => {
     <View style={styles.container}>
       <Header title="Kom ihåg!"></Header>
       <View style={styles.blueContainer}></View>
-      <TouchableOpacity
-        style={styles.container}
-        onPress={() => navigation.replace("Menu")}
-      >
+      <View
+        style={styles.container} >
         <Text style={styles.textStyle}>
           Alla objekt och metoder som används i översättningarna kräver mer kod
           än vad som visas i översättningen. Denna app visar exempel på hur
@@ -26,10 +26,19 @@ const Information = () => {
           metoderna.
         </Text>
       
+      
       <View style={[styles.blueContainer, { flex: 1 }]}>
-        <Text style={styles.constructorTextStyle}>Ha så kul!</Text>
+      <TouchableOpacity onPress={() => navigation.replace("Menu")}>
+        <Image 
+          source = {require('../assets/icons/have_fun.png')}
+          style = {styles.haveFunStyle} />
+        {/* <Text style={styles.haveFunStyle}> Ha så kul! </Text> */}
+        <GoingForward/>
+        </TouchableOpacity>
+       
+        </View>
+      
       </View>
-      </TouchableOpacity>
     </View>
   );
 };

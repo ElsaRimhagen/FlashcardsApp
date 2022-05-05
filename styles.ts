@@ -68,6 +68,14 @@ const styles = StyleSheet.create({
     alignContent: "center",
     justifyContent: "center",
   },
+  translationContainerStyle: {
+    width: 270,
+    height: 100,
+    backgroundColor: colors.background,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 9,
+  },
 
   // Headers & Text //
   categorytextStyle: {
@@ -98,6 +106,16 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textAlign: 'center',
   },
+  // haveFunStyle: {
+  //   color: colors.headers,
+  //   fontFamily: "American-Typewriter",
+  //   fontSize: 40,
+  //   textAlign: 'center',
+  //   textShadowColor: colors.text, 
+  //   textShadowRadius: 7 , 
+  //   textShadowOffset: {width:5, height:0}
+    
+  // },
   titleStyle: {
     color: colors.headers,
     fontFamily: "American-Typewriter",
@@ -141,9 +159,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  haveFunStyle: {
+    height: 130,
+    resizeMode: "contain",
+    padding: 10,
+    margin: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   GoBackStyle: {
     position: "absolute",
-    left: 15,
+    left: 5,
     top: 15,
     resizeMode: "contain",
     width: 60,
@@ -156,6 +182,22 @@ const styles = StyleSheet.create({
     left: 5,
     top: 15,
   },
+  GoForwardStyle: {
+    position: "absolute",
+    right: 25,
+    bottom: 15,
+    resizeMode: "contain",
+    width: 60,
+    height: 60,
+  },
+  GoForwardTouchableOpacity: {
+    position: "absolute",
+    width: 60,
+    height: 60,
+    right: 5,
+    bottom: 15,
+  },
+  
   imgStyle: {
     width: 80,
     height: 80,
@@ -176,14 +218,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 0,
   },
-  translationContainerStyle: {
-    width: 270,
-    height: 100,
-    backgroundColor: colors.background,
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: 9,
-  },
+  
 });
 
 export default styles;
