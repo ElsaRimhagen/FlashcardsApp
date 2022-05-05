@@ -7,8 +7,6 @@ import { useNavigation } from "@react-navigation/core";
 import styles from "../styles";
 import Header from "../components/Header";
 import { StackParams } from "../App";
-import { colors } from "../assets/colors";
-import GoingForward from "../components/GoingForward";
 
 const Information = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
@@ -32,7 +30,6 @@ const Information = () => {
         <Image 
           source = {require('../assets/icons/have_fun_pil.png')}
           style = {styles.haveFunStyle} />
-        {/* <Text style={styles.haveFunStyle}> Ha så kul! </Text> */}
        
         </TouchableOpacity>
        

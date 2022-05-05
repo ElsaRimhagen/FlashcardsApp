@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Alert } from "react-native";
+import { View } from "react-native";
 
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/core";
@@ -8,7 +8,6 @@ import styles from "../styles";
 import Header from "../components/Header";
 import CategoryLogo from "../components/CategoryLogo";
 import { StackParams } from "../App";
-import { colors } from "../assets/colors";
 
 const Menu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
