@@ -30,10 +30,10 @@ const Information = () => {
       <View style={[styles.blueContainer, { flex: 1 }]}>
       <TouchableOpacity onPress={() => navigation.replace("Menu")}>
         <Image 
-          source = {require('../assets/icons/have_fun.png')}
+          source = {require('../assets/icons/have_fun_pil.png')}
           style = {styles.haveFunStyle} />
         {/* <Text style={styles.haveFunStyle}> Ha så kul! </Text> */}
-        <GoingForward/>
+       
         </TouchableOpacity>
        
         </View>

@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   haveFunStyle: {
-    height: 130,
+    height: 100,
     resizeMode: "contain",
     padding: 10,
     margin: 10,
