@@ -5,10 +5,11 @@ import styles from "../styles";
 
 interface Props {
   frontside_block: any;
-  translation: any;
+  translation: string;
+  color: string;
 }
 
-const Flashcard = ({ frontside_block, translation }: Props) => {
+const Flashcard = ({ frontside_block, translation, color }: Props) => {
   let animatedValue = new Animated.Value(0);
   let currentValue = 0;
 
@@ -51,7 +52,8 @@ const Flashcard = ({ frontside_block, translation }: Props) => {
             style={[
               styles.flashcardStyle,
               { transform: [{ rotateY: frontInterpolate }] },
-            ]}>
+            ]}
+          >
             <Image style={styles.bigBlockStyle} source={frontside_block} />
           </Animated.View>
 
@@ -60,12 +62,22 @@ const Flashcard = ({ frontside_block, translation }: Props) => {
               styles.flashcardStyle,
               styles.flashcardBacksideStyle,
               { transform: [{ rotateY: backInterpolate }] },
-            ]}>
-            <View style={styles.translationContainerStyle}>
-              <Text 
-              adjustsFontSizeToFit
-              numberOfLines={1}
-              style={styles.translationStyle}> {translation} </Text>
+            ]}
+          >
+            <View
+              style={[
+                styles.translationContainerStyle,
+                { backgroundColor: color },
+              ]}
+            >
+              <Text
+                adjustsFontSizeToFit
+                numberOfLines={1}
+                style={styles.translationStyle}
+              >
+                {" "}
+                {translation}{" "}
+              </Text>
             </View>
           </Animated.View>
         </View>

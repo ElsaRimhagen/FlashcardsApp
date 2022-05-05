@@ -98,24 +98,14 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontFamily: "American-Typewriter",
     fontSize: 30,
-    textAlign: 'center'
+    textAlign: "center",
   },
   constructorTextStyle: {
     color: colors.headers,
     fontFamily: "American-Typewriter",
     fontSize: 40,
-    textAlign: 'center',
+    textAlign: "center",
   },
-  // haveFunStyle: {
-  //   color: colors.headers,
-  //   fontFamily: "American-Typewriter",
-  //   fontSize: 40,
-  //   textAlign: 'center',
-  //   textShadowColor: colors.text, 
-  //   textShadowRadius: 7 , 
-  //   textShadowOffset: {width:5, height:0}
-    
-  // },
   titleStyle: {
     color: colors.headers,
     fontFamily: "American-Typewriter",
