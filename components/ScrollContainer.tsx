@@ -23,11 +23,12 @@ export const ScrollContainer = ({ chosenCategory }: Props) => {
   const renderClickableBlock = ({ item }: { item: any }) => {
     return (
       <ClickableBlock
-        source = {item.source}
-        onPress = {() => {
+        source={item.source}
+        onPress={() => {
           navigation.navigate("FlashcardView", {
             frontside_block: item.source,
             translation: item.translation,
+            color: item.color,
           });
         }}
       />

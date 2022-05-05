@@ -90,13 +90,13 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontFamily: "American-Typewriter",
     fontSize: 30,
-    textAlign: 'center'
+    textAlign: "center",
   },
   constructorTextStyle: {
     color: colors.headers,
     fontFamily: "American-Typewriter",
     fontSize: 40,
-    textAlign: 'center',
+    textAlign: "center",
   },
   titleStyle: {
     color: colors.headers,
@@ -179,7 +179,6 @@ const styles = StyleSheet.create({
   translationContainerStyle: {
     width: 270,
     height: 100,
-    backgroundColor: colors.background,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 9,

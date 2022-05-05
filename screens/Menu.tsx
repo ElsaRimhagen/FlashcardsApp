@@ -8,12 +8,12 @@ import styles from "../styles";
 import Header from "../components/Header";
 import CategoryLogo from "../components/CategoryLogo";
 import { StackParams } from "../App";
+import { colors } from "../assets/colors";
 
 const Menu = () => {
   const navigation = useNavigation<NativeStackNavigationProp<StackParams>>();
 
   const Boxes = () => {
-
     return (
       <View style={styles.boxContainer}>
         <CategoryLogo

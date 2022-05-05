@@ -19,6 +19,7 @@ const FlashcardView = ({ route }: Props) => {
       <Flashcard
         frontside_block={data.frontside_block}
         translation={data.translation}
+        color={data.color}
       />
       <Header title="i kod?" />
       <View style={{ flex: 1 }}></View>

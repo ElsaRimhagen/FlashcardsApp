@@ -25,10 +25,10 @@ const Information = () => {
           blocken skulle kunna skrivas i kod tillsammans med de färdiga
           metoderna.
         </Text>
-      
-      <View style={[styles.blueContainer, { flex: 1 }]}>
-        <Text style={styles.constructorTextStyle}>Ha så kul!</Text>
-      </View>
+
+        <View style={[styles.blueContainer, { flex: 1 }]}>
+          <Text style={styles.constructorTextStyle}>Ha så kul!</Text>
+        </View>
       </TouchableOpacity>
     </View>
   );
