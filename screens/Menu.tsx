@@ -43,8 +43,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Ljud",
-              text_row1: "sätter ljud",
-              text_row2: "till ditt spel",
+              text_row1: "ger ljud till",
+              text_row2: "ditt spel",
             });
           }}
         />
@@ -66,7 +66,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Kontroll",
               text_row1: "kontrollerar hur och ",
-              text_row2: "när för din Sprite",
+              text_row2: "när saker sker",
             });
           }}
         />
@@ -88,7 +88,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Operatorer",
               text_row1: "kontrollerar beräkningar",
-              text_row2: "och logik",
+              text_row2: "och logik i ditt spel",
             });
           }}
         />
@@ -98,8 +98,8 @@ const Menu = () => {
           onPress={() => {
             navigation.navigate("SubMenu", {
               title: "Variabler",
-              text_row1: "kontrollerar varibaler",
-              text_row2: "i ditt spel",
+              text_row1: "kontrollerar dina",
+              text_row2: "variabler i spelet",
             });
           }}
         />

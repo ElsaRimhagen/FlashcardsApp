@@ -18,12 +18,9 @@ const SubMenu = ({ route }: Props) => {
     <View style={styles.containerCenter}>
       <GoingBack />
       <Header title={data.title} />
-      <TextParagraph
-        text_row1= {data.text_row1}
-        text_row2={data.text_row2}
-      />
-      <View style = {styles.blueContainer}></View>
-      <UnderConstruction/>
+      <TextParagraph text_row1={data.text_row1} text_row2={data.text_row2} />
+      <View style={styles.blueContainer}></View>
+      <UnderConstruction />
     </View>
   );
 };
