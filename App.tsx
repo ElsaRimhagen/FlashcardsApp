@@ -27,6 +27,7 @@ const App = () => {
   let [fontsLoaded] = useFonts({
     "American-Typewriter": require("./assets/fonts/AmericanTypewriterRegular.ttf"),
     "American-Typewriter-Bold": require("./assets/fonts/AmericanTypewriterBold.ttf"),
+    "Helvetica": require("./assets/fonts/Helvetica.ttf"),
   });
 
   if (!fontsLoaded) {
