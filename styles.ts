@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   },
   translationStyle: {
     color: colors.text,
-    fontFamily: "American-Typewriter",
+    fontFamily: "Helvetica",
     fontSize: 25,
   },
 
