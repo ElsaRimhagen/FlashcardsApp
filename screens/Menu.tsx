@@ -22,7 +22,7 @@ const Menu = () => {
             navigation.navigate("SubMenu", {
               title: "Rörelse",
               text_row1: "kontrollerar din",
-              text_row2: "Sprites rörelser",
+              text_row2: "Sprajts rörelser",
             });
           }}
         />
@@ -33,7 +33,7 @@ const Menu = () => {
             navigation.navigate("SubMenu", {
               title: "Utseende",
               text_row1: "kontrollerar din",
-              text_row2: "Sprites utseende",
+              text_row2: "Sprajts utseende",
             });
           }}
         />
@@ -44,7 +44,7 @@ const Menu = () => {
             navigation.navigate("SubMenu", {
               title: "Ljud",
               text_row1: "ger ljud till",
-              text_row2: "ditt spel",
+              text_row2: "ditt program",
             });
           }}
         />
@@ -55,7 +55,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Händelser",
               text_row1: "kontrollerar händelser",
-              text_row2: "i ditt spel",
+              text_row2: "i ditt program",
             });
           }}
         />
@@ -77,7 +77,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Känna av",
               text_row1: "kontrollerar situationer",
-              text_row2: "när Spriten möter annat",
+              text_row2: "när Sprajten möter annat",
             });
           }}
         />
@@ -88,7 +88,7 @@ const Menu = () => {
             navigation.navigate("SubMenu2", {
               title: "Operatorer",
               text_row1: "kontrollerar beräkningar",
-              text_row2: "och logik i ditt spel",
+              text_row2: "och logik i ditt program",
             });
           }}
         />
@@ -99,7 +99,7 @@ const Menu = () => {
             navigation.navigate("SubMenu", {
               title: "Variabler",
               text_row1: "kontrollerar dina",
-              text_row2: "variabler i spelet",
+              text_row2: "variabler i programmet",
             });
           }}
         />

@@ -20,7 +20,7 @@ const Information = () => {
         <Text style={styles.textStyle}>
           Alla objekt och metoder som används i översättningarna kräver mer kod
           än vad som visas i översättningen. Denna app visar exempel på hur
-          blocken skulle kunna skrivas i kod tillsammans med de färdiga
+          blockens motsvarande anrop skulle kunna skrivas i Python-kod tillsammans med de färdiga
           metoderna.
         </Text>
       
