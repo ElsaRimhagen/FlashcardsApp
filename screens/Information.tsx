@@ -13,7 +13,7 @@ const Information = () => {
 
   return (
     <View style={styles.container}>
-      <Header title="Kom ihåg!"></Header>
+      <Header title="Kom ihåg!"/>
       <View style={styles.blueContainer}></View>
       <View
         style={styles.container} >
