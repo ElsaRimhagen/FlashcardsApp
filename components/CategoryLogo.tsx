@@ -22,3 +22,8 @@ const CategoryLogo = ({ source, category, onPress }: Props) => {
 };
 
 export default CategoryLogo;
+
+
+
+
+
