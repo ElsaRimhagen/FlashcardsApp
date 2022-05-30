@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "BlockisCode",
-    "slug": "BlockisCode",
+    "name": "FlashcardsApp",
+    "slug": "FlashcardsApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icons/applogo.png",
+    "icon": "./assets/icons/applogo_v3.png",
     "splash": {
       "image": "./assets/icons/splash_cat.png",
       "resizeMode": "contain",
@@ -18,15 +18,15 @@
       "supportsTablet": true
     },
     "android": {
-      "package" : "com.BlockisCode",
+      "package" : "com.FlashcardsApp",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icons/applogo.png",
+        "foregroundImage": "./assets/icons/applogo_v3.png",
         "backgroundColor": "#4C97FF"
       }
     },
     "web": {
-      "favicon": "./assets/icons/applogo.png"
+      "favicon": "./assets/icons/applogo_v3.png"
     }
   }
 }
