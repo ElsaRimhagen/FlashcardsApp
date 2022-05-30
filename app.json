@@ -18,7 +18,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package" : "com.FlashcardsApp",
+      "package" : "com.BlockisCode",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icons/applogo_v3.png",
